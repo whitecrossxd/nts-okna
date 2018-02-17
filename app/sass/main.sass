@@ -3,12 +3,71 @@
 @import vars.sass
 
 body
+	font-family: Roboto
 	font-size: 16px
 	min-width: 320px
 	position: relative
 	line-height: 1.6
 	overflow-x: hidden
-	background-color: $color
+	background-color: $white
+header
+	.nav-bar
+		display: flex
+		justify-content: space-around
+		text-align: center
+		font-size: 2rem
+		margin: 16px 0
+		.logo
+			flex: 1 2 100%
+			font-size: 2rem
+			color: $main
+			margin: auto
+		.number
+			flex: 2 1 100%
+			position: relative
+			color: $black
+			margin: auto
+		.address
+			flex: 1 2 100%
+			line-height: 1.6
+			font-size: 1.15rem
+			position: relative
+			margin: auto
+			color: $main
+			text-align: left
+			p
+				position: relative
+				padding-left: 35px
+				margin: 0
+				margin-bottom: 8px
+				svg
+					position: absolute
+					left: 5px
+					top: 20%
+	.menu-container
+		width: 100%
+		background-color: $main
+		margin: 0
+		padding: 0
+		.menu
+			display: flex
+			justify-content: flex-start
+			.menu-item
+				display: block
+				color: $white
+				font-size: 14px
+				font-weight: 500
+				line-height: 1
+				white-space: nowrap
+				text-transform: uppercase
+				letter-spacing: 1.5px
+				padding: 24px 12px
+				text-align: center
+				text-decoration: none
+				transition: all 0.2s ease 0s
+				&:hover, &:focus, &:active
+					background-color: $white
+					color: $main
 
 .p1
 	font-family: "RobotoLightItalic", sans-serif
