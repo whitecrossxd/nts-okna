@@ -9,10 +9,15 @@ $(document).ready(function(){
 			setUpListeners: function() {
 				// $('.add-to-cart').on('click', app.addCart);
 			},
-			initPlaginsOnes: function(){},
+			initPlaginsOnes: function(){
+				$('.flexslider').flexslider({
+					animation: "slide",
+					controlNav: !1,
+    			customDirectionNav: $(".custom-navigation a")
+				});
+			},
 			initPlagins: function(){}
 		}
-
 		app.initialize();
 	}());
 });
