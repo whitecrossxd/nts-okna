@@ -160,7 +160,7 @@ header
 			color: #777
 // ---------------------------------- СЛАЙДЕР ----------------------------------
 
-// ---------------------------------- О НАС ----------------------------------
+// ---------------------------------- ЦИФРЫ ----------------------------------
 main
 	.about-nts
 		text-align: center
@@ -201,11 +201,41 @@ main
 					line-height: 1
 					transition: all 0.75s ease 0s
 				&:hover
-					color: $accent
+					color: $accent2
 					outline: 2px solid $accent
 					background-color: $grey
 					.num
 						transform: rotateY(2turn)
+// ---------------------------------- ЦИФРЫ ----------------------------------
+// ---------------------------------- ПРОИЗВОДСТВО ----------------------------------
+main
+	.production
+		padding: 50px 0
+		background-color: $grey
+		h1
+			font-size: rem(54px)
+			font-weight: 700
+			color: $accent
+			margin-bottom: 25px
+			span
+				color: $black
+		.elements
+			display: flex
+			flex-flow: row wrap
+			justify-content: space-between
+			.item
+				flex: 0 1 32%
+				height: 200px
+				background-color: $accent2
+				margin-bottom: 35px
+				transition: all 0.2s ease 0s
+				&:nth-child(4)
+					flex: 0 1 66%
+				&:hover
+					transform: scale(1.05)
+
+
+// ---------------------------------- ПРОИЗВОДСТВО ----------------------------------
 // ---------------------------------- О НАС ----------------------------------
 main
 	.about
@@ -255,6 +285,7 @@ main
 					font-weight: 700
 				p
 					font-size: 1.35rem
+// ---------------------------------- О НАС ----------------------------------
 // ---------------------------------- Стоимость ----------------------------------
 main
 	.cost
