@@ -1,6 +1,6 @@
 @import bourbon
-@import fonts
-@import vars
+@import _fonts.sass
+@import _vars.sass
 
 @import app/libs/flexslider2/demo/sass/flexslider.sass
  
@@ -12,6 +12,50 @@ body
 	line-height: 1.6
 	overflow-x: hidden
 	background-color: $white
+.main
+	color: $main
+.accent
+	color: $accent
+.accent2
+	color: $accent2
+.bgc-main
+	background-color: $main
+.bgc-accent
+	background-color: $accent
+.bgc-accent2
+	background-color: $accent2
+.overlay-white
+	position: absolute
+	top: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(255, 255, 255, 0.75)
+	z-index: 1
+.rotate-90
+	transform: rotate(-90deg)
+
+.more-info
+	display: inline-block
+	position: relative
+	padding: 8px 16px
+	color: $white
+	background-color: rgba(0, 0, 0, 0.85)
+	&:hover
+		text-decoration: none
+		background-color: $accent2
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 100%
+		width: 42px
+		height: 41px
+		background-color: $accent2
+		background-image: url(../img/arrow-right.png)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: 35%
 
 // ---------------------------------- Шапка ----------------------------------
 header
@@ -29,8 +73,13 @@ header
 		.number
 			flex: 2 1 100%
 			position: relative
-			color: $black
+			color: $accent2
 			margin: auto
+			svg
+				position: absolute
+				left: 20%
+				top: 20%
+				color: $accent
 		.address
 			flex: 1 2 100%
 			line-height: 1.6
@@ -48,6 +97,7 @@ header
 					position: absolute
 					left: 5px
 					top: 20%
+					color: $accent
 	.menu-container
 		width: 100%
 		background-color: $main
@@ -64,21 +114,43 @@ header
 				line-height: 1
 				white-space: nowrap
 				text-transform: uppercase
-				letter-spacing: 1.5px
+				letter-spacing: 0.5px
 				padding: 24px 12px
 				text-align: center
 				text-decoration: none
 				transition: all 0.2s ease 0s
 				&:hover, &:focus, &:active
-					background-color: $white
-					color: $main
+					background-color: rgba(255, 255, 255, 0.8)
+					color: $accent
 // ---------------------------------- Шапка ----------------------------------
 
 // ---------------------------------- СЛАЙДЕР ----------------------------------
 .flexslider
 	position: relative
 	height: 500px
+	max-height: 500px
 	overflow: hidden
+	margin: 0
+	.flex-viewport
+		height: 100%
+		ul
+			height: 100%
+			li
+				position: relative
+				height: 100%
+				.slide-content
+					position: absolute
+					top: 50px
+					bottom: 50px
+					left: 10%
+					width: 80%
+					padding: 50px
+					background-color: rgba(255, 255, 255, 0.8)
+					h1
+						color: $accent
+						line-height: 2!important
+					h3
+						line-height: 2!important
 	.custom-navigation
 		position: absolute
 		z-index: 1
@@ -94,7 +166,7 @@ main
 		text-align: center
 		padding: 50px 0 100px
 		h1
-			font-size: rem(74px)
+			font-size: rem(100px)
 			font-weight: 700
 			color: $accent
 		p
@@ -102,10 +174,12 @@ main
 			font-size: 1.5rem
 			margin-bottom: 2.5rem
 		.row
-			flex-wrap: nowrap
-			justify-content: space-between
+			flex-wrap: wrap
+			justify-content: center
 		.card-item
-			flex: 0 0 19%
+			margin: 0.5%
+			min-width: 200px
+			flex: 0
 			.custom-card
 				cursor: pointer
 				outline: 2px solid #fff
@@ -125,14 +199,145 @@ main
 					font-size: 100px
 					font-weight: 900
 					line-height: 1
-					transition: all 0.5s ease 0s
+					transition: all 0.75s ease 0s
 				&:hover
 					color: $accent
 					outline: 2px solid $accent
 					background-color: $grey
 					.num
-						transform: rotateY(1turn)
+						transform: rotateY(2turn)
 // ---------------------------------- О НАС ----------------------------------
+main
+	.about
+		position: relative
+		z-index: 0
+		background-image: url(../img/bg1.jpg)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		background-attachment: fixed
+		.content
+			display: flex
+			justify-content: space-between
+			position: relative
+			padding: 50px 0
+			z-index: 2
+			.years
+				font-weight: 700
+				line-height: 1
+				.num
+					line-height: 1
+					position: relative
+					font-weight: 700
+					font-size: rem(220px)
+					margin-right: 90px
+					span
+						display: inline-block
+						font-size: rem(52px)
+						&:first-child
+							position: absolute
+							width: 0
+							top: 145px
+							right: -50px
+							font-size: rem(90px)
+				span
+					display: block
+					text-align: center
+					font-size: rem(58px)
+					&:last-child
+						font-size: rem(26px)
+			.info
+				padding-left: 50px
+				h1
+					font-size: rem(54px)
+					line-height: 1
+					letter-spacing: 3px
+					font-weight: 700
+				p
+					font-size: 1.35rem
+// ---------------------------------- Стоимость ----------------------------------
+main
+	.cost
+		background-color: $white
+		width: 100%
+		position: relative
+		.container
+			padding: 50px 0
+			background-image: url(../img/okno.jpg)
+			background-position: right center
+			background-repeat: no-repeat
+			h1
+				font-size: 3.75rem
+				color: $main
+				font-weight: 700
+				span
+					color: $black
+					font-weight: 100
+			.sry
+				width: 60%
+				p
+					&.main
+						font-size: rem(12px)
+
+// ---------------------------------- Стоимость ----------------------------------
+// ---------------------------------- Новости ----------------------------------
+main
+	.news
+		background-color: $grey
+		padding: 50px 0
+		.container
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			h1
+				font-size: rem(54px)
+				flex-basis: 100%
+				letter-spacing: 1.5px
+				font-weight: 100
+				span
+					font-weight: 700
+			.news-item
+				position: relative
+				flex-basis: 32%
+				margin: 10px 0 80px
+				box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.75)
+				&-img
+					overflow: hidden
+					img
+						width: 100%
+						transition: all 0.2s ease 0s
+					&:hover
+						img
+							transform: scale(1.15)
+				.more-info
+					display: block
+					position: absolute
+					bottom: -42px
+					left: -1px
+					padding: 8px 16px
+					color: $white
+					background-color: rgba(0, 0, 0, 0.85)
+					&:hover
+						text-decoration: none
+						background-color: $accent2
+					&::after
+						content: ''
+						display: block
+						position: absolute
+						top: 0
+						left: 100%
+						width: 42px
+						height: 41px
+						background-color: $accent2
+						background-image: url(../img/arrow-right.png)
+						background-repeat: no-repeat
+						background-position: center center
+						background-size: 35%
+				&-content
+					width: 100%
+					padding: 24px
+					background-color: $white
+// ---------------------------------- Новости ----------------------------------
 
 
 @import media

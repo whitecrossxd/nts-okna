@@ -316,7 +316,7 @@ header .nav-bar {
         -ms-flex: 1 2 100%;
             flex: 1 2 100%;
     font-size: 2rem;
-    color: #348c26;
+    color: #34a722;
     margin: auto; }
   header .nav-bar .number {
     -webkit-box-flex: 2;
@@ -335,7 +335,7 @@ header .nav-bar {
     font-size: 1.15rem;
     position: relative;
     margin: auto;
-    color: #348c26;
+    color: #34a722;
     text-align: left; }
     header .nav-bar .address p {
       position: relative;
@@ -349,7 +349,7 @@ header .nav-bar {
 
 header .menu-container {
   width: 100%;
-  background-color: #348c26;
+  background-color: #34a722;
   margin: 0;
   padding: 0; }
   header .menu-container .menu {
@@ -378,12 +378,13 @@ header .menu-container {
       transition: all 0.2s ease 0s; }
       header .menu-container .menu .menu-item:hover, header .menu-container .menu .menu-item:focus, header .menu-container .menu .menu-item:active {
         background-color: #fff;
-        color: #348c26; }
+        color: #34a722; }
 
 .flexslider {
   position: relative;
   height: 500px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 0; }
   .flexslider .custom-navigation {
     position: absolute;
     z-index: 1;
@@ -426,7 +427,7 @@ main .about-nts {
       -o-transition: all 0.3s ease 0s;
       transition: all 0.3s ease 0s;
       padding: 20px 20px 40px;
-      background-color: #348c26;
+      background-color: #34a722;
       color: #fff; }
       main .about-nts .card-item .custom-card .custom-card-body {
         padding-top: 20px;
