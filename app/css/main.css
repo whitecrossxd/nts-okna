@@ -560,13 +560,15 @@ main .production {
         -ms-flex-pack: justify;
             justify-content: space-between; }
     main .production .elements .item {
+      position: relative;
       -webkit-box-flex: 0;
       -webkit-flex: 0 1 32%;
           -ms-flex: 0 1 32%;
               flex: 0 1 32%;
-      height: 200px;
+      height: 450px;
       background-color: #ff9c00;
       margin-bottom: 35px;
+      overflow: hidden;
       -webkit-transition: all 0.2s ease 0s;
       -o-transition: all 0.2s ease 0s;
       transition: all 0.2s ease 0s; }
@@ -579,6 +581,28 @@ main .production {
         -webkit-transform: scale(1.05);
             -ms-transform: scale(1.05);
                 transform: scale(1.05); }
+      main .production .elements .item-content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0 !important; }
+        main .production .elements .item-content .img-container {
+          position: relative;
+          height: 100%; }
+          main .production .elements .item-content .img-container img {
+            height: 100% !important;
+            width: auto !important; }
+      main .production .elements .item .item-info {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        padding: 15px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.75); }
 
 main .about {
   position: relative;
