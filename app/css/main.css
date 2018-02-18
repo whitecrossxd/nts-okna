@@ -528,12 +528,57 @@ main .about-nts {
         -o-transition: all 0.75s ease 0s;
         transition: all 0.75s ease 0s; }
       main .about-nts .card-item .custom-card:hover {
-        color: #731982;
+        color: #ff9c00;
         outline: 2px solid #731982;
         background-color: #ededed; }
         main .about-nts .card-item .custom-card:hover .num {
           -webkit-transform: rotateY(2turn);
                   transform: rotateY(2turn); }
+
+main .production {
+  padding: 50px 0;
+  background-color: #ededed; }
+  main .production h1 {
+    font-size: 3.375rem;
+    font-weight: 700;
+    color: #731982;
+    margin-bottom: 25px; }
+    main .production h1 span {
+      color: #000; }
+  main .production .elements {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    main .production .elements .item {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 32%;
+          -ms-flex: 0 1 32%;
+              flex: 0 1 32%;
+      height: 200px;
+      background-color: #ff9c00;
+      margin-bottom: 35px;
+      -webkit-transition: all 0.2s ease 0s;
+      -o-transition: all 0.2s ease 0s;
+      transition: all 0.2s ease 0s; }
+      main .production .elements .item:nth-child(4) {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 66%;
+            -ms-flex: 0 1 66%;
+                flex: 0 1 66%; }
+      main .production .elements .item:hover {
+        -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+                transform: scale(1.05); }
 
 main .about {
   position: relative;
