@@ -564,7 +564,8 @@ main .about {
         position: relative;
         font-weight: 700;
         font-size: 13.75rem;
-        margin-right: 90px; }
+        margin-right: 90px;
+        margin-bottom: -20px; }
         main .about .content .years .num span {
           display: inline-block;
           font-size: 3.25rem; }
