@@ -224,15 +224,39 @@ main
 			flex-flow: row wrap
 			justify-content: space-between
 			.item
+				position: relative
 				flex: 0 1 32%
-				height: 200px
+				height: 450px
 				background-color: $accent2
 				margin-bottom: 35px
+				overflow: hidden
 				transition: all 0.2s ease 0s
 				&:nth-child(4)
 					flex: 0 1 66%
 				&:hover
 					transform: scale(1.05)
+				&-content
+					position: absolute
+					left: 0
+					top: 0
+					width: 100%
+					height: 100%
+					padding: 0!important
+					.img-container
+						position: relative
+						height: 100%
+						img
+							height: 100%!important
+							width: auto!important
+				.item-info
+					position: absolute
+					left: 0
+					bottom: 0
+					width: 100%
+					height: 50%
+					padding: 15px
+					color: $white
+					background-color: rgba(0, 0, 0, 0.75)
 
 
 // ---------------------------------- ПРОИЗВОДСТВО ----------------------------------
@@ -261,6 +285,7 @@ main
 					font-weight: 700
 					font-size: rem(220px)
 					margin-right: 90px
+					margin-bottom: -20px
 					span
 						display: inline-block
 						font-size: rem(52px)
