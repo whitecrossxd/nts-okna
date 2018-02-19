@@ -1,0 +1,161 @@
+@import bourbon
+@import _fonts.sass
+@import _vars.sass
+
+//-----------КЛАССЫ ПОМОщь-----------
+*
+	box-sizing: border-box
+body
+	padding-top: 98px
+ul, ol
+	list-style: none
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+.bg-main
+	background-color: $main
+.bg-accent
+	background-color: $accent
+.bg-accent2
+	background-color: $accent2
+.text-accent
+	color: $accent
+	&:hover
+		color: $accent
+.text-accent2
+	color: $accent2
+	&:hover
+		color: $accent2
+.text-main
+	color: $main
+	&:hover
+		color: $main
+.btn-cust
+	border: none
+	outline: none
+	background-color: $accent
+	color: $white
+	cursor: pointer
+//-----------КЛАССЫ ПОМОщь-----------
+
+
+//-----------ШАПКА-----------
+header
+	background-color: $white
+	img.logo
+		height: 50px
+	nav
+		background-color: $main
+		a
+			color: $white
+//-----------ШАПКА-----------
+
+
+//-----------О НАС первая секция-----------
+#tiser
+	.tiser-bg
+		background-image: url(/img/bg1.png)
+		background-position: center top
+		background-size: 1200px auto
+		background-repeat: no-repeat
+		background-attachment: fixed
+		height: 500px
+		h1
+			background-color: rgba(red($white),green($white),blue($white),.7)
+		.callback-block
+			background-color: rgba(red($main),green($main),blue($main),.8)
+//-----------О НАС первая секция-----------
+
+//-----------ФАКТЫ вторая секция-----------
+#facts
+	background-color: $main
+//-----------ФАКТЫ вторая секция-----------
+
+//-----------ТИПОВЫЕ РЕШЕНИЯ трерия секция-----------
+#type-solution
+	.flexslider
+		.custom-navigation
+			a
+				color: $accent
+	.slides
+		background-image: url(/img/white-brick.jpg)
+		li
+			img.window
+				width: 85%
+	.solution
+		width: 85%
+		height: 100%
+		.solution-head
+			background-color: rgba(red($main),green($main),blue($main),.85)
+		.solution-body
+			background-color: rgba(red($white),green($white),blue($white),.7)
+		.solution-footer
+			background-color: rgba(red($main),green($main),blue($main),.85)
+			.price
+				background-color: $white
+//-----------ТИПОВЫЕ РЕШЕНИЯ третия секция-----------
+
+//-----------ЧЕСТНАЯ ЦЕНА четвёртая секция-----------
+#calculation
+	background-image: url(/img/calc.jpg)
+	background-repeat: no-repeat
+	background-position: center 100px
+	.callback-block
+		background-color: $main
+//-----------ЧЕСТНАЯ ЦЕНА четвёртая секция-----------
+
+//-----------ЧЕСТНАЯ ЦЕНА пятая секция-----------
+#benefit
+	.benefit-bg
+		background-image: url(/img/benefit.png)
+		background-repeat: no-repeat
+		background-position: center top
+		background-size: cover
+		background-attachment: fixed
+//-----------ЧЕСТНАЯ ЦЕНА пятая секция-----------
+
+//-----------УСЛУГИ шестая секция-----------
+#service
+	.service-bg
+		background-image: url(/img/service.png)
+		background-repeat: no-repeat
+		background-position: center top
+		background-size: cover
+		background-attachment: fixed
+//-----------УСЛУГИ шестая секция-----------
+
+
+//-----------ГОТОВЫЕ РАБОТЫ седьмая секция-----------
+#execute
+	.flexslider
+		height: auto
+		.custom-navigation
+			a
+				color: $accent
+	.execute-item
+		background-color: #e0e0e0
+		border-left: 5px solid $main
+	img
+		border: 5px solid $main
+//-----------ГОТОВЫЕ РАБОТЫ седьмая секция-----------
+
+
+//-----------ШАГИ К КОМФОРТУ восьмая секция-----------
+#steps
+
+//-----------ШАГИ К КОМФОРТУ восьмая секция-----------
+
+
+//-----------ШАГИ К КОМФОРТУ девятая секция-----------
+#contacts
+	.bordered
+		position: relative
+		border: 2px solid $main
+//-----------ШАГИ К КОМФОРТУ девятая секция-----------
+
+
+//-----------ПОДВАЛ-----------
+footer
+	background-color: #e0e0e0
+//-----------ПОДВАЛ-----------
