@@ -1,12 +1,11 @@
 @import bourbon
-@import _fonts.sass
 @import _vars.sass
 
 //-----------КЛАССЫ ПОМОщь-----------
 *
 	box-sizing: border-box
-body
-	padding-top: 98px
+p
+	margin: 0
 ul, ol
 	list-style: none
 a
@@ -17,6 +16,8 @@ a
 	background-color: $main
 .bg-accent
 	background-color: $accent
+.bg-white
+	background-color: $white
 .bg-accent2
 	background-color: $accent2
 .text-accent
@@ -28,134 +29,406 @@ a
 	&:hover
 		color: $accent2
 .text-main
-	color: $main
+	color: $main !important
 	&:hover
-		color: $main
+		color: $main !important
 .btn-cust
 	border: none
 	outline: none
 	background-color: $accent
 	color: $white
 	cursor: pointer
+.bold-100
+	font-weight: 100
+.bold-300
+	font-weight: 300
+.bold-500
+	font-weight: 500
+.bold-700
+	font-weight: 700
+.bold-900
+	font-weight: 900
+.more-info
+	color: $white
+	background-color: $main
+	&:hover
+		background-color: $accent
+		color: #fff
+	&::after
+		background-color: $accent
+.h7
+	font-size: em(14px)
 //-----------КЛАССЫ ПОМОщь-----------
 
 
-//-----------ШАПКА-----------
-header
-	background-color: $white
-	img.logo
-		height: 50px
-	nav
-		background-color: $main
-		a
-			color: $white
-//-----------ШАПКА-----------
+// -------------------------------------ШАПКА-------------------------------------
+// -------------------------------------ШАПКА-------------------------------------
 
 
-//-----------О НАС первая секция-----------
-#tiser
-	.tiser-bg
-		background-image: url(/img/bg1.png)
-		background-position: center top
-		background-size: 1200px auto
-		background-repeat: no-repeat
-		background-attachment: fixed
-		height: 500px
-		h1
-			background-color: rgba(red($white),green($white),blue($white),.7)
-		.callback-block
-			background-color: rgba(red($main),green($main),blue($main),.8)
-//-----------О НАС первая секция-----------
 
-//-----------ФАКТЫ вторая секция-----------
-#facts
-	background-color: $main
-//-----------ФАКТЫ вторая секция-----------
+// -------------------------------------ОКНА - ПЕРВАЯ СЕКЦИЯ-------------------------------------
+#windows
+	background-color: #efefef
+	.window-item
+		border: 3px solid $white
+		&:hover
+			border: 3px solid $accent2
+		.scale
+			div
+				width: 8.3%
+				height: 3px
+// -------------------------------------ОКНА - ПЕРВАЯ СЕКЦИЯ-------------------------------------
 
-//-----------ТИПОВЫЕ РЕШЕНИЯ трерия секция-----------
-#type-solution
-	.flexslider
-		.custom-navigation
-			a
-				color: $accent
-	.slides
-		background-image: url(/img/white-brick.jpg)
-		li
-			img.window
-				width: 85%
-	.solution
-		width: 85%
-		height: 100%
-		.solution-head
-			background-color: rgba(red($main),green($main),blue($main),.85)
-		.solution-body
-			background-color: rgba(red($white),green($white),blue($white),.7)
-		.solution-footer
-			background-color: rgba(red($main),green($main),blue($main),.85)
-			.price
-				background-color: $white
-//-----------ТИПОВЫЕ РЕШЕНИЯ третия секция-----------
+// -------------------------------------ПРИМЕРЫ РАБОТ - ВТОРАЯ СЕКЦИЯ-------------------------------------
+#advantage
+	h2
+		font-size: em(60px)
+		span:last-child
+			font-size: em(17px)
+	p:last-child
+		font-size: em(14px)
+// -------------------------------------ПРИМЕРЫ РАБОТ - ВТОРАЯ СЕКЦИЯ-------------------------------------
 
-//-----------ЧЕСТНАЯ ЦЕНА четвёртая секция-----------
-#calculation
-	background-image: url(/img/calc.jpg)
+
+// -------------------------------------ПРИМЕРЫ РАБОТ - ЧЕТВЁРТАЯ СЕКЦИЯ-------------------------------------
+#cost
+	h2
+		font-size: em(60px)
+		span:last-child
+			font-size: em(17px)
+	p:last-child
+		font-size: em(14px)
+// -------------------------------------ПРИМЕРЫ РАБОТ - ЧЕТВЁРТАЯ ВТОРАЯ СЕКЦИЯ-------------------------------------
+
+// -------------------------------------ВЫПОЛНЕННЫЕ РАБОТЫ - ЧЕТВЁРТАЯ СЕКЦИЯ-------------------------------------
+#production
+	h2
+		font-size: em(60px)
+		span:last-child
+			font-size: em(17px)
+	p:last-child
+		font-size: em(14px)
+// -------------------------------------ВЫПОЛНЕННЫЕ РАБОТЫ - ЧЕТВЁРТАЯ ВТОРАЯ СЕКЦИЯ-------------------------------------
+
+
+//-------------  КНОПКА ОБРАТНОГО ЗВОНКА  -------------
+#popup__toggle
+	bottom: 25px
+	right: 0
+	position: fixed
+	z-index: 999
+	outline: none
+
+.img-circleblock svg
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	color: #fff
+
+.img-circle
+	background-color: $accent //#29AEE3
+	box-sizing: content-box
+
+.circlephone
+	box-sizing: content-box
+	border: 2px solid $accent //#29AEE3
+	width: 150px
+	height: 150px
+	bottom: -25px
+	right: 0
+	position: absolute
+	border-radius: 100%
+	opacity: .5
+	animation: circle-anim 2.4s infinite ease-in-out !important
+	transition: all 0.5s
+
+.circle-fill
+	box-sizing: content-box
+	background-color: $accent //#29AEE3
+	width: 100px
+	height: 100px
+	bottom: 0
+	right: 24px
+	position: absolute
+	border-radius: 100%
+	border: 2px solid transparent
+	animation: circle-fill-anim 2.3s infinite ease-in-out
+	transition: all 0.5s
+
+.img-circle
+	box-sizing: content-box
+	width: 72px
+	height: 72px
+	bottom: 14px
+	right: 38px
+	position: absolute
+	border-radius: 100%
+	border: 2px solid transparent
+	opacity: .7
+
+.img-circleblock
+	box-sizing: content-box
+	width: 72px
+	height: 72px
+	//background-image: url(images/mini.png)
+	background-position: center center
 	background-repeat: no-repeat
-	background-position: center 100px
-	.callback-block
-		background-color: $main
-//-----------ЧЕСТНАЯ ЦЕНА четвёртая секция-----------
+	animation-name: tossing
+	animation-duration: 1.5s
+	animation-iteration-count: infinite
+	i.fa
+		position: absolute
+		top: 50%
+		margin-top: -24px
+		left: 16px
+		font-size: em(50px)
+		color: #fff
 
-//-----------ЧЕСТНАЯ ЦЕНА пятая секция-----------
-#benefit
-	.benefit-bg
-		background-image: url(/img/benefit.png)
-		background-repeat: no-repeat
-		background-position: center top
-		background-size: cover
-		background-attachment: fixed
-//-----------ЧЕСТНАЯ ЦЕНА пятая секция-----------
+.img-circle:hover
+	opacity: 1
 
-//-----------УСЛУГИ шестая секция-----------
-#service
-	.service-bg
-		background-image: url(/img/service.png)
-		background-repeat: no-repeat
-		background-position: center top
-		background-size: cover
-		background-attachment: fixed
-//-----------УСЛУГИ шестая секция-----------
+@keyframes pulse
+	0%
+		transform: scale(0.9)
+		opacity: 1
+	50%
+		transform: scale(1)
+		opacity: 1
+	100%
+		transform: scale(0.9)
+		opacity: 1
+
+@-webkit-keyframes pulse
+	0%
+		-webkit-transform: scale(0.95)
+		opacity: 1
+	50%
+		-webkit-transform: scale(1)
+		opacity: 1
+	100%
+		-webkit-transform: scale(0.95)
+		opacity: 1
+
+@keyframes tossing
+	0%
+		transform: rotate(-8deg)
+	50%
+		transform: rotate(8deg)
+	100%
+		transform: rotate(-8deg)
+
+@-webkit-keyframes tossing
+	0%
+		-webkit-transform: rotate(-8deg)
+	50%
+		-webkit-transform: rotate(8deg)
+	100%
+		-webkit-transform: rotate(-8deg)
+
+@-moz-keyframes circle-anim
+	0%
+		-moz-transform: rotate(0deg) scale(0.5) skew(1deg)
+		opacity: .1
+		-moz-opacity: .1
+		-webkit-opacity: .1
+		-o-opacity: .1
+	30%
+		-moz-transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .5
+		-moz-opacity: .5
+		-webkit-opacity: .5
+		-o-opacity: .5
+	100%
+		-moz-transform: rotate(0deg) scale(1) skew(1deg)
+		opacity: .6
+		-moz-opacity: .6
+		-webkit-opacity: .6
+		-o-opacity: .1
+
+@-webkit-keyframes circle-anim
+	0%
+		-webkit-transform: rotate(0deg) scale(0.5) skew(1deg)
+		-webkit-opacity: .1
+	30%
+		-webkit-transform: rotate(0deg) scale(0.7) skew(1deg)
+		-webkit-opacity: .5
+	100%
+		-webkit-transform: rotate(0deg) scale(1) skew(1deg)
+		-webkit-opacity: .1
+
+@-o-keyframes circle-anim
+	0%
+		-o-transform: rotate(0deg) kscale(0.5) skew(1deg)
+		-o-opacity: .1
+	30%
+		-o-transform: rotate(0deg) scale(0.7) skew(1deg)
+		-o-opacity: .5
+	100%
+		-o-transform: rotate(0deg) scale(1) skew(1deg)
+		-o-opacity: .1
+
+@keyframes circle-anim
+	0%
+		transform: rotate(0deg) scale(0.5) skew(1deg)
+		opacity: .1
+	30%
+		transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .5
+	100%
+		transform: rotate(0deg) scale(1) skew(1deg)
+		opacity: .1
+
+@-moz-keyframes circle-fill-anim
+	0%
+		-moz-transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .2
+	50%
+		-moz-transform: rotate(0deg) -moz-scale(1) skew(1deg)
+		opacity: .2
+	100%
+		-moz-transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .2
+
+@-webkit-keyframes circle-fill-anim
+	0%
+		-webkit-transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .2
+	50%
+		-webkit-transform: rotate(0deg) scale(1) skew(1deg)
+		opacity: .2
+	100%
+		-webkit-transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .2
+
+@-o-keyframes circle-fill-anim
+	0%
+		-o-transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .2
+	50%
+		-o-transform: rotate(0deg) scale(1) skew(1deg)
+		opacity: .2
+	100%
+		-o-transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .2
+
+@keyframes circle-fill-anim
+	0%
+		transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .2
+	50%
+		transform: rotate(0deg) scale(1) skew(1deg)
+		opacity: .2
+	100%
+		transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .2
+//-------------  КНОПКА ОБРАТНОГО ЗВОНКА  -------------
 
 
-//-----------ГОТОВЫЕ РАБОТЫ седьмая секция-----------
-#execute
-	.flexslider
-		height: auto
-		.custom-navigation
-			a
-				color: $accent
-	.execute-item
-		background-color: #e0e0e0
-		border-left: 5px solid $main
-	img
-		border: 5px solid $main
-//-----------ГОТОВЫЕ РАБОТЫ седьмая секция-----------
+//-----------О НАС первая секция-----------
+// #tiser
+// 	.tiser-bg
+// 		background-image: url(/img/bg1.png)
+// 		background-position: center top
+// 		background-size: 1200px auto
+// 		background-repeat: no-repeat
+// 		background-attachment: fixed
+// 		height: 500px
+// 		h1
+// 			background-color: rgba(red($white),green($white),blue($white),.7)
+// 		.callback-block
+// 			background-color: rgba(red($main),green($main),blue($main),.8)
+// //-----------О НАС первая секция-----------
+
+// //-----------ФАКТЫ вторая секция-----------
+// #facts
+// 	background-color: $main
+// //-----------ФАКТЫ вторая секция-----------
+
+// //-----------ТИПОВЫЕ РЕШЕНИЯ трерия секция-----------
+// #type-solution
+// 	.flexslider
+// 		.custom-navigation
+// 			a
+// 				color: $accent
+// 	.slides
+// 		background-image: url(/img/white-brick.jpg)
+// 		li
+// 			img.window
+// 				width: 85%
+// 	.solution
+// 		width: 85%
+// 		height: 100%
+// 		.solution-head
+// 			background-color: rgba(red($main),green($main),blue($main),.85)
+// 		.solution-body
+// 			background-color: rgba(red($white),green($white),blue($white),.7)
+// 		.solution-footer
+// 			background-color: rgba(red($main),green($main),blue($main),.85)
+// 			.price
+// 				background-color: $white
+// //-----------ТИПОВЫЕ РЕШЕНИЯ третия секция-----------
+
+// //-----------ЧЕСТНАЯ ЦЕНА четвёртая секция-----------
+// #calculation
+// 	background-image: url(/img/calc.jpg)
+// 	background-repeat: no-repeat
+// 	background-position: center 100px
+// 	.callback-block
+// 		background-color: $main
+// //-----------ЧЕСТНАЯ ЦЕНА четвёртая секция-----------
+
+// //-----------ЧЕСТНАЯ ЦЕНА пятая секция-----------
+// #benefit
+// 	.benefit-bg
+// 		background-image: url(/img/benefit.png)
+// 		background-repeat: no-repeat
+// 		background-position: center top
+// 		background-size: cover
+// 		background-attachment: fixed
+// //-----------ЧЕСТНАЯ ЦЕНА пятая секция-----------
+
+// //-----------УСЛУГИ шестая секция-----------
+// #service
+// 	.service-bg
+// 		background-image: url(/img/service.png)
+// 		background-repeat: no-repeat
+// 		background-position: center top
+// 		background-size: cover
+// 		background-attachment: fixed
+// //-----------УСЛУГИ шестая секция-----------
 
 
-//-----------ШАГИ К КОМФОРТУ восьмая секция-----------
-#steps
+// //-----------ГОТОВЫЕ РАБОТЫ седьмая секция-----------
+// #execute
+// 	.flexslider
+// 		height: auto
+// 		.custom-navigation
+// 			a
+// 				color: $accent
+// 	.execute-item
+// 		background-color: #e0e0e0
+// 		border-left: 5px solid $main
+// 	img
+// 		border: 5px solid $main
+// //-----------ГОТОВЫЕ РАБОТЫ седьмая секция-----------
 
-//-----------ШАГИ К КОМФОРТУ восьмая секция-----------
+
+// //-----------ШАГИ К КОМФОРТУ восьмая секция-----------
+// #steps
+
+// //-----------ШАГИ К КОМФОРТУ восьмая секция-----------
 
 
-//-----------ШАГИ К КОМФОРТУ девятая секция-----------
-#contacts
-	.bordered
-		position: relative
-		border: 2px solid $main
-//-----------ШАГИ К КОМФОРТУ девятая секция-----------
+// //-----------ШАГИ К КОМФОРТУ девятая секция-----------
+// #contacts
+// 	.bordered
+// 		position: relative
+// 		border: 2px solid $main
+// //-----------ШАГИ К КОМФОРТУ девятая секция-----------
 
 
-//-----------ПОДВАЛ-----------
-footer
-	background-color: #e0e0e0
-//-----------ПОДВАЛ-----------
+// //-----------ПОДВАЛ-----------
+// footer
+// 	background-color: #e0e0e0
+// //-----------ПОДВАЛ-----------

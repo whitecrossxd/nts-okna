@@ -333,20 +333,26 @@ body {
 .more-info {
   display: inline-block;
   position: relative;
-  padding: 8px 16px;
+  padding: 8px -webkit-calc(16px + 42px) 8px 16px;
+  padding: 8px calc(16px + 42px) 8px 16px;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.85); }
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
   .more-info:hover {
     text-decoration: none;
-    background-color: #ff9c00; }
+    background-color: #ff9c00;
+    color: #000; }
   .more-info::after {
     content: '';
     display: block;
     position: absolute;
     top: 0;
-    left: 100%;
+    left: -webkit-calc(100% - 42px);
+    left: calc(100% - 42px);
     width: 42px;
-    height: 41px;
+    height: 100%;
     background-color: #ff9c00;
     background-image: url(../img/arrow-right.png);
     background-repeat: no-repeat;
@@ -566,7 +572,6 @@ main .production {
           -ms-flex: 0 1 32%;
               flex: 0 1 32%;
       height: 450px;
-      background-color: #ff9c00;
       margin-bottom: 35px;
       overflow: hidden;
       -webkit-transition: all 0.2s ease 0s;
@@ -592,8 +597,7 @@ main .production {
           position: relative;
           height: 100%; }
           main .production .elements .item-content .img-container img {
-            height: 100% !important;
-            width: auto !important; }
+            height: 100% !important; }
       main .production .elements .item .item-info {
         position: absolute;
         left: 0;
