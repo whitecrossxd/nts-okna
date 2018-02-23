@@ -311,6 +311,9 @@ body {
 .bgc-main {
   background-color: #34a722; }
 
+.bgc-grey {
+  background-color: #ededed; }
+
 .bgc-accent {
   background-color: #731982; }
 
@@ -329,6 +332,16 @@ body {
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg); }
+
+.active {
+  background-color: rgba(255, 255, 255, 0.75) !important;
+  color: #731982 !important; }
+
+.title {
+  font-size: 3rem !important; }
+
+.notice {
+  font-size: 1.35rem !important; }
 
 .more-info {
   display: inline-block;
