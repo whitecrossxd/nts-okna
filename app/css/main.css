@@ -373,6 +373,82 @@ body {
     -webkit-background-size: 35% 35%;
             background-size: 35%; }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+p {
+  margin: 0; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+.bg-main {
+  background-color: #34a722; }
+
+.bg-accent {
+  background-color: #731982; }
+
+.bg-white {
+  background-color: #fff; }
+
+.bg-accent2 {
+  background-color: #ff9c00; }
+
+.text-accent {
+  color: #731982; }
+  .text-accent:hover {
+    color: #731982; }
+
+.text-accent2 {
+  color: #ff9c00; }
+  .text-accent2:hover {
+    color: #ff9c00; }
+
+.text-main {
+  color: #34a722 !important; }
+  .text-main:hover {
+    color: #34a722 !important; }
+
+.btn-cust {
+  border: none;
+  outline: none;
+  background-color: #731982;
+  color: #fff;
+  cursor: pointer; }
+
+.bold-100 {
+  font-weight: 100; }
+
+.bold-300 {
+  font-weight: 300; }
+
+.bold-500 {
+  font-weight: 500; }
+
+.bold-700 {
+  font-weight: 700; }
+
+.bold-900 {
+  font-weight: 900; }
+
+.more-info {
+  color: #fff;
+  background-color: #000; }
+  .more-info:hover {
+    background-color: #ff9c00;
+    color: #fff; }
+  .more-info::after {
+    background-color: #ff9c00; }
+
+.h7 {
+  font-size: 0.875em; }
+
 header .nav-bar {
   display: -webkit-box;
   display: -webkit-flex;
@@ -770,6 +846,194 @@ main .news {
         width: 100%;
         padding: 24px;
         background-color: #fff; }
+
+#popup__toggle {
+  bottom: 25px;
+  right: 0;
+  position: fixed;
+  z-index: 999;
+  outline: none; }
+
+.img-circleblock svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff; }
+
+.img-circle {
+  background-color: #731982;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
+
+.circlephone {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 2px solid #731982;
+  width: 150px;
+  height: 150px;
+  bottom: -25px;
+  right: 0;
+  position: absolute;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  opacity: .5;
+  -webkit-animation: circle-anim 2.4s infinite ease-in-out !important;
+          animation: circle-anim 2.4s infinite ease-in-out !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.circle-fill {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  background-color: #731982;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  right: 24px;
+  position: absolute;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  border: 2px solid transparent;
+  -webkit-animation: circle-fill-anim 2.3s infinite ease-in-out;
+          animation: circle-fill-anim 2.3s infinite ease-in-out;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.img-circle {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 72px;
+  height: 72px;
+  bottom: 14px;
+  right: 38px;
+  position: absolute;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  border: 2px solid transparent;
+  opacity: .7; }
+
+.img-circleblock {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 72px;
+  height: 72px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation-name: tossing;
+          animation-name: tossing;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+  .img-circleblock i.fa {
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+    left: 16px;
+    font-size: 3.125em;
+    color: #fff; }
+
+.img-circle:hover {
+  opacity: 1; }
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 1; }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 1; } }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+    opacity: 1; }
+  50% {
+    -webkit-transform: scale(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(0.95);
+    opacity: 1; } }
+
+@keyframes tossing {
+  0% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg); }
+  50% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg); }
+  100% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg); } }
+
+@-webkit-keyframes tossing {
+  0% {
+    -webkit-transform: rotate(-8deg); }
+  50% {
+    -webkit-transform: rotate(8deg); }
+  100% {
+    -webkit-transform: rotate(-8deg); } }
+
+@-webkit-keyframes circle-anim {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.5) skew(1deg);
+    -webkit-opacity: .1; }
+  30% {
+    -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
+    -webkit-opacity: .5; }
+  100% {
+    -webkit-transform: rotate(0deg) scale(1) skew(1deg);
+    -webkit-opacity: .1; } }
+
+@keyframes circle-anim {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.5) skew(1deg);
+            transform: rotate(0deg) scale(0.5) skew(1deg);
+    opacity: .1; }
+  30% {
+    -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
+            transform: rotate(0deg) scale(0.7) skew(1deg);
+    opacity: .5; }
+  100% {
+    -webkit-transform: rotate(0deg) scale(1) skew(1deg);
+            transform: rotate(0deg) scale(1) skew(1deg);
+    opacity: .1; } }
+
+@-webkit-keyframes circle-fill-anim {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
+    opacity: .2; }
+  50% {
+    -webkit-transform: rotate(0deg) scale(1) skew(1deg);
+    opacity: .2; }
+  100% {
+    -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
+    opacity: .2; } }
+
+@keyframes circle-fill-anim {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
+            transform: rotate(0deg) scale(0.7) skew(1deg);
+    opacity: .2; }
+  50% {
+    -webkit-transform: rotate(0deg) scale(1) skew(1deg);
+            transform: rotate(0deg) scale(1) skew(1deg);
+    opacity: .2; }
+  100% {
+    -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
+            transform: rotate(0deg) scale(0.7) skew(1deg);
+    opacity: .2; } }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
