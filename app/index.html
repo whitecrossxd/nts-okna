@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="libs/bootstrap-4.0.0/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/bootstrap-4.0.0/css/bootstrap-custom.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/main.css">
 	<title>НТС - СК</title>
 </head>
@@ -126,7 +127,7 @@
 			<div class="container">
 				<h1 class="text-uppercase">мы <span>производим</span></h1>
 				<div class="elements">
-					<div class="item">
+					<div class="item invisible animated move4">
 						<div class="item-content">
 							<div class="img-container">
 								<a href="#">
@@ -139,7 +140,7 @@
 							<p>Лучшие в мире</p>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item invisible animated move4">
 						<div class="item-content">
 							<div class="img-container">
 								<a href="#">
@@ -152,7 +153,7 @@
 							<p>Лучшие в мире</p>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item invisible animated move4">
 						<div class="item-content">
 							<div class="img-container">
 								<a href="#">
@@ -165,7 +166,7 @@
 							<p>Лучшие в мире</p>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item invisible animated move4">
 						<div class="item-content">
 							<div class="img-container">
 								<a href="#">
@@ -178,7 +179,7 @@
 							<p>Лучшие в мире</p>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item invisible animated move4">
 						<div class="item-content">
 							<div class="img-container">
 								<a href="#">
@@ -198,12 +199,12 @@
 		<div class="about">
 			<div class="container">
 				<div class="content">
-					<div class="years">
+					<div class="years invisible animated move1">
 						<div class="num main">10<span class="text-uppercase rotate-90">лет</span></div>
 						<span class="text-uppercase">на рынке</span>
 						<span class="text-uppercase">производства окон</span>
 					</div>
-					<div class="info">
+					<div class="info invisible animated move2">
 						<h1 class="text-uppercase"><span class="accent2 text-nowrap">о компании</span><br>НТС</h1>
 						<p>«НТС» является одной из самых крупных компаний в Нижнем Новгороде по производству и реализации пластиковых окон, дверей ПВХ, фасадов и алюминиевых конструкций.</p>
 						<a href="#" class="more-info text-uppercase">подробнее</a>
@@ -214,7 +215,7 @@
 		</div>
 
 		<div class="cost">
-			<div class="container">
+			<div class="container invisible animated move3">
 				<h1 class="text-uppercase">Рассчитать<br><span>Стоимость</span></h1>
 				<h4>Окно по Вашим размерам</h4>
 				<div class="sry">
@@ -226,7 +227,7 @@
 		<div class="news">
 			<div class="container">
 				<h1 class="text-uppercase"><span class="accent">новости</span> и статьи</h1>
-				<div class="news-item">
+				<div class="news-item invisible animated move1">
 					<div class="news-item-img">
 						<img src="../img/1.jpg" alt="">
 					</div>
@@ -237,7 +238,7 @@
 					</div>
 					<a href="#" class="more-info text-uppercase">подробнее</a>
 				</div>
-				<div class="news-item">
+				<div class="news-item invisible animated move3">
 					<div class="news-item-img">
 						<img src="../img/1.jpg" alt="">
 					</div>
@@ -248,7 +249,7 @@
 					</div>
 					<a href="#" class="more-info text-uppercase">подробнее</a>
 				</div>
-				<div class="news-item">
+				<div class="news-item invisible animated move2">
 					<div class="news-item-img">
 						<img src="../img/1.jpg" alt="">
 					</div>
@@ -259,7 +260,7 @@
 					</div>
 					<a href="#" class="more-info text-uppercase">подробнее</a>
 				</div>
-				<div class="news-item">
+				<div class="news-item invisible animated move1">
 					<div class="news-item-img">
 						<img src="../img/1.jpg" alt="">
 					</div>
@@ -270,7 +271,7 @@
 					</div>
 					<a href="#" class="more-info text-uppercase">подробнее</a>
 				</div>
-				<div class="news-item">
+				<div class="news-item invisible animated move3">
 					<div class="news-item-img">
 						<img src="../img/1.jpg" alt="">
 					</div>
@@ -281,7 +282,7 @@
 					</div>
 					<a href="#" class="more-info text-uppercase">подробнее</a>
 				</div>
-				<div class="news-item">
+				<div class="news-item invisible animated move2">
 					<div class="news-item-img">
 						<img src="../img/1.jpg" alt="">
 					</div>
@@ -295,6 +296,18 @@
 			</div>
 		</div>
 	</main>
+
+	<!-- Кнопка обратного звонка -->
+	<a href="#" id="popup__toggle" onclick="return !1;" data-toggle="modal" data-target="#callBack" data-whatever="Заявка с мигающей кнопки сайта sw52.ru">
+	    <div class="circlephone" style="transform-origin: center;"></div>
+	    <div class="circle-fill" style="transform-origin: center;"></div>
+	    <div class="img-circle" style="transform-origin: center;">
+	        <div class="img-circleblock" style="transform-origin: center;">
+	            <i class="fa fa-2x fa-phone" aria-hidden="true"></i>
+	        </div>
+	    </div>
+	</a>
+	<!-- Кнопка обратного звонка -->
 
 	<footer>
 		<iframe class="d-block" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa31235ca59e0b9e6cc279fafa47ac2060fac40f5d6bd4a9ffbdeadb5a41be68a&amp;source=constructor" width="100%" height="500px" frameborder="0"></iframe>
@@ -313,5 +326,43 @@
 	<script type="text/javascript" src="libs/bootstrap-4.0.0/js/popper.min.js"></script>
 	<script type="text/javascript" src="libs/flexslider2/demo/js/jquery.flexslider.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+		$(window).scroll(function() {
+			$('.move2').each(function(){
+				var imagePos = $(this).offset().top,
+						topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow + $(window).height() - window.innerHeight/2.5)
+					$(this).removeClass('invisible').addClass('fadeInRight');
+			});
+			$('.move1').each(function(){
+				var imagePos = $(this).offset().top,
+						topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow + $(window).height() - window.innerHeight/2.5)
+					$(this).removeClass('invisible').addClass('fadeInLeft');
+			});
+			$('.move3').each(function(){
+				var imagePos = $(this).offset().top,
+						topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow + $(window).height() - window.innerHeight/2.5)
+					$(this).removeClass('invisible').addClass('fadeInUp');
+			});
+			$('.move4').each(function(){
+				var imagePos = $(this).offset().top,
+						topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow + $(window).height() - window.innerHeight/2.5)
+					$(this).removeClass('invisible').addClass('fadeInDown');
+			});
+			$('h1.animated, h2.animated').each(function(){
+				var imagePos = $(this).offset().top,
+						topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow + $(window).height() - window.innerHeight/2.5)
+					$(this).removeClass('invisible').addClass('fadeInRightBig');
+			});
+		});
+		$(".move1 > .number, .move2 > .number" ).hover(
+			function(){ $(this).addClass('pulse'); },
+			function(){ $(this).removeClass('pulse'); }
+		);
+	</script>
 </body>
 </html>

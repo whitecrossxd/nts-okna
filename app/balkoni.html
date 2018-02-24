@@ -6,9 +6,9 @@
 	<link rel="stylesheet" href="libs/bootstrap-4.0.0/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/bootstrap-4.0.0/css/bootstrap-custom.css">
 	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/pvh.css">
 	<link rel="stylesheet" href="css/balkoni.css">
+	<link rel="stylesheet" href="css/main.css">
 
 	<title>НТС - СК</title>
 </head>
@@ -77,6 +77,7 @@
 				</div>
 			</div><!--/custom-navigation -->
 		</section>
+
 		<section id="balkon">
 			<div class="container py-5">
 				<h1 class="text-uppercase mb-5">
@@ -85,7 +86,7 @@
 				</h1>
 				<div class="row">
 					<div class="col-7 invisible animated move1">
-						<p class="bold-300">Остекление балкона в Нижнем Новгороде — это выгодная замена холодного балкона на теплый! Современные многоквартирные дома проектируются и строятся уже с остеклёнными оконными проёмами и лоджиями, но, как правило, это алюминиевое остекление холодного типа. Оно хорошо от дождя и снега, но круглогодичное использование такой лоджии проблематично. И это естественно, ибо тёплое остекление с применением стеклопакетов и герметизацией пространства – удовольствие, доступное не всякому застройщику. Замена устаревшего, холодного остекления на тёплое, преследует, прежде всего, экономические и утилитарные цели. Ибо, утеплив лоджию и заменив стеклопакетами обычные оконные рамы, затраты на её обогрев и обогрев помещения существенно уменьшаются, а саму лоджию уже можно рассматривать как часть комнаты, либо как дополнительное помещение.</p>
+						<p class="bold-300 notice">Остекление балкона в Нижнем Новгороде — это выгодная замена холодного балкона на теплый! Современные многоквартирные дома проектируются и строятся уже с остеклёнными оконными проёмами и лоджиями, но, как правило, это алюминиевое остекление холодного типа. Оно хорошо от дождя и снега, но круглогодичное использование такой лоджии проблематично. И это естественно, ибо тёплое остекление с применением стеклопакетов и герметизацией пространства – удовольствие, доступное не всякому застройщику. Замена устаревшего, холодного остекления на тёплое, преследует, прежде всего, экономические и утилитарные цели. Ибо, утеплив лоджию и заменив стеклопакетами обычные оконные рамы, затраты на её обогрев и обогрев помещения существенно уменьшаются, а саму лоджию уже можно рассматривать как часть комнаты, либо как дополнительное помещение.</p>
 					</div>
 					<div class="col-5 invisible p-0 align-self-center animated move2"><img src="img/okno1.jpg" alt="" width="100%"></div>
 				</div>
@@ -200,25 +201,25 @@
 			$('.move2').each(function(){
 				var imagePos = $(this).offset().top,
 						topOfWindow = $(window).scrollTop();
-				if (imagePos < topOfWindow + $(window).height() - 100)
+				if (imagePos < topOfWindow + $(window).height() - window.innerHeight/2.5)
 					$(this).removeClass('invisible').addClass('fadeInRight');
 			});
 			$('.move1').each(function(){
 				var imagePos = $(this).offset().top,
 						topOfWindow = $(window).scrollTop();
-				if (imagePos < topOfWindow + $(window).height() - 100)
+				if (imagePos < topOfWindow + $(window).height() - window.innerHeight/2.5)
 					$(this).removeClass('invisible').addClass('fadeInLeft');
 			});
 			$('.move3').each(function(){
 				var imagePos = $(this).offset().top,
 						topOfWindow = $(window).scrollTop();
-				if (imagePos < topOfWindow + $(window).height() - 100)
+				if (imagePos < topOfWindow + $(window).height() - window.innerHeight/2.5)
 					$(this).removeClass('invisible').addClass('fadeInUp');
 			});
 			$('h1.animated, h2.animated').each(function(){
 				var imagePos = $(this).offset().top,
 						topOfWindow = $(window).scrollTop();
-				if (imagePos < topOfWindow + $(window).height() - 100)
+				if (imagePos < topOfWindow + $(window).height() - window.innerHeight/2.5)
 					$(this).removeClass('invisible').addClass('fadeInRightBig');
 			});
 		});
