@@ -13,25 +13,33 @@ body
 	overflow-x: hidden
 	background-color: $white
 .main
-	color: $main
+	color: $main!important
 .accent
-	color: $accent
+	color: $accent!important
 .accent2
-	color: $accent2
+	color: $accent2!important
 .bgc-main
-	background-color: $main
+	background-color: $main!important
 .bgc-grey
-	background-color: $grey
+	background-color: $grey!important
 .bgc-accent
-	background-color: $accent
+	background-color: $accent!important
 .bgc-accent2
-	background-color: $accent2
+	background-color: $accent2!important
 .overlay-white
 	position: absolute
 	top: 0
 	width: 100%
 	height: 100%
 	background-color: rgba(255, 255, 255, 0.75)
+	z-index: 1
+.overlay
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, 0.5)
 	z-index: 1
 .rotate-90
 	transform: rotate(-90deg)
@@ -209,6 +217,9 @@ header
 			li
 				position: relative
 				height: 100%
+				img
+					position: absolute
+					bottom: -15%
 				.slide-content
 					position: absolute
 					top: 50px
@@ -222,6 +233,9 @@ header
 						line-height: 2!important
 					h3
 						line-height: 2!important
+					a
+						position: absolute
+						bottom: 15%
 	.custom-navigation
 		position: absolute
 		z-index: 1
@@ -230,6 +244,58 @@ header
 		a
 			color: #777
 // ---------------------------------- СЛАЙДЕР ----------------------------------
+
+
+// ---------------------------------- Причины работать с нами ----------------------------------
+#edge
+	padding: 24px 0
+	.title
+		font-size: 4rem!important
+	.edge
+		display: flex
+		padding: 50px 0
+		&:nth-child(2)
+		&:last-child
+		.elem
+			position: relative
+			display: flex
+			align-items: center
+			flex: 1 1 33%
+			height: 350px
+			margin: 1rem
+			border: 2px solid $grey
+			box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75)
+			transition: all 0.3s ease-in-out
+			p
+				display: none
+			&:first-child
+				background-image: url(../img/money.jpeg)
+				background-repeat: no-repeat
+				background-size: cover
+			&:nth-child(2)
+				background-image: url(../img/zamer.jpg)
+				background-repeat: no-repeat
+				background-size: cover
+			&:last-child
+				background-image: url(../img/postpay.jpg)
+				background-repeat: no-repeat
+				background-size: cover
+			&:hover
+				flex-basis: 100%
+				p
+					display: block
+			.content
+				position: relative
+				z-index: 2
+				display: flex
+				flex-direction: column
+				h3
+					margin-top: 16px
+					font-size: 2.5rem
+					color: #fff
+				p
+					color: #fff
+// ---------------------------------- Причины работать с нами ----------------------------------
 
 // ---------------------------------- ЦИФРЫ ----------------------------------
 main
@@ -302,6 +368,7 @@ main
 				height: 450px
 				margin-bottom: 35px
 				overflow: hidden
+				box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75)
 				&:nth-child(4)
 					flex: 0 1 66%
 				&-content

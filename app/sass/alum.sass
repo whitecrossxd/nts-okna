@@ -3,7 +3,7 @@
 
 // -------------------------------------ВЫПОЛНЕННЫЕ РАБОТЫ - ВТОРАЯ СЕКЦИЯ-------------------------------------
 main .production
-	// background-color: #fff 
+	background-color: #fff 
 #production
 	h2
 		font-size: em(60px)
@@ -11,6 +11,43 @@ main .production
 			font-size: em(17px)
 	p:last-child
 		font-size: em(14px)
+
+.production
+	.alum
+		.elements
+			.item
+				height: 350px!important
+				transition: all 0.2s ease 0s
+				cursor: pointer
+				box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75)
+				&:hover
+					transform: scale(1.05)
+				&-content
+					position: absolute
+					left: 0
+					top: 0
+					width: 100%
+					height: 100%
+					padding: 15px
+					color: $white
+					transition: unset
+					&:hover
+						transform: unset
+				.item-info
+					position: absolute
+					display: flex
+					align-items: center
+					text-align: center
+					left: 0
+					top: 0
+					width: 100%
+					height: 100%
+					padding: 15px
+					color: $white
+					background-color: rgba(0, 0, 0, 0.6)
+					h3
+						font-size: 2rem
+						flex-basis: 100%
 // -------------------------------------ВЫПОЛНЕННЫЕ РАБОТЫ - ВТОРАЯ ВТОРАЯ СЕКЦИЯ-------------------------------------
 
 // -------------------------------------ПРИМЕРЫ РАБОТ - ШЕСТАЯ СЕКЦИЯ-------------------------------------

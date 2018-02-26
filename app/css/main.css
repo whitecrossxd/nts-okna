@@ -300,25 +300,25 @@ body {
   background-color: #fff; }
 
 .main {
-  color: #34a722; }
+  color: #34a722 !important; }
 
 .accent {
-  color: #731982; }
+  color: #731982 !important; }
 
 .accent2 {
-  color: #ff9c00; }
+  color: #ff9c00 !important; }
 
 .bgc-main {
-  background-color: #34a722; }
+  background-color: #34a722 !important; }
 
 .bgc-grey {
-  background-color: #ededed; }
+  background-color: #ededed !important; }
 
 .bgc-accent {
-  background-color: #731982; }
+  background-color: #731982 !important; }
 
 .bgc-accent2 {
-  background-color: #ff9c00; }
+  background-color: #ff9c00 !important; }
 
 .overlay-white {
   position: absolute;
@@ -326,6 +326,15 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.75);
+  z-index: 1; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1; }
 
 .rotate-90 {
@@ -549,6 +558,9 @@ header .menu-container {
       .flexslider .flex-viewport ul li {
         position: relative;
         height: 100%; }
+        .flexslider .flex-viewport ul li img {
+          position: absolute;
+          bottom: -15%; }
         .flexslider .flex-viewport ul li .slide-content {
           position: absolute;
           top: 50px;
@@ -562,6 +574,9 @@ header .menu-container {
             line-height: 2 !important; }
           .flexslider .flex-viewport ul li .slide-content h3 {
             line-height: 2 !important; }
+          .flexslider .flex-viewport ul li .slide-content a {
+            position: absolute;
+            bottom: 15%; }
   .flexslider .custom-navigation {
     position: absolute;
     z-index: 1;
@@ -571,6 +586,80 @@ header .menu-container {
             transform: translateY(-50%); }
     .flexslider .custom-navigation a {
       color: #777; }
+
+#edge {
+  padding: 24px 0; }
+  #edge .title {
+    font-size: 4rem !important; }
+  #edge .edge {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 50px 0; }
+    #edge .edge .elem {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 33%;
+          -ms-flex: 1 1 33%;
+              flex: 1 1 33%;
+      height: 350px;
+      margin: 1rem;
+      border: 2px solid #ededed;
+      -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+              box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      #edge .edge .elem p {
+        display: none; }
+      #edge .edge .elem:first-child {
+        background-image: url(../img/money.jpeg);
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+                background-size: cover; }
+      #edge .edge .elem:nth-child(2) {
+        background-image: url(../img/zamer.jpg);
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+                background-size: cover; }
+      #edge .edge .elem:last-child {
+        background-image: url(../img/postpay.jpg);
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+                background-size: cover; }
+      #edge .edge .elem:hover {
+        -webkit-flex-basis: 100%;
+            -ms-flex-preferred-size: 100%;
+                flex-basis: 100%; }
+        #edge .edge .elem:hover p {
+          display: block; }
+      #edge .edge .elem .content {
+        position: relative;
+        z-index: 2;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        #edge .edge .elem .content h3 {
+          margin-top: 16px;
+          font-size: 2.5rem;
+          color: #fff; }
+        #edge .edge .elem .content p {
+          color: #fff; }
 
 main .about-nts {
   text-align: center;
@@ -662,7 +751,9 @@ main .production {
               flex: 0 1 32%;
       height: 450px;
       margin-bottom: 35px;
-      overflow: hidden; }
+      overflow: hidden;
+      -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+              box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75); }
       main .production .elements .item:nth-child(4) {
         -webkit-box-flex: 0;
         -webkit-flex: 0 1 66%;
