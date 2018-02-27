@@ -314,6 +314,9 @@ body {
 .bgc-grey {
   background-color: #ededed !important; }
 
+.bgc-white {
+  background-color: #fff !important; }
+
 .bgc-accent {
   background-color: #731982 !important; }
 
@@ -423,6 +426,11 @@ a {
   color: #34a722 !important; }
   .text-main:hover {
     color: #34a722 !important; }
+
+.text-grey {
+  color: #ededed !important; }
+  .text-grey:hover {
+    color: #ededed !important; }
 
 .btn-cust {
   border: none;
@@ -969,6 +977,20 @@ main .news {
         width: 100%;
         padding: 24px;
         background-color: #fff; }
+
+#callback {
+  background-color: #fff; }
+  #callback .container {
+    background-image: url(../img/callback.jpg);
+    -webkit-background-size: auto 80%;
+            background-size: auto 80%;
+    background-position: right center;
+    background-repeat: no-repeat; }
+    #callback .container h6 {
+      font-size: 3.75rem; }
+    #callback .container form button {
+      outline: none;
+      border: none; }
 
 #popup__toggle {
   bottom: 25px;

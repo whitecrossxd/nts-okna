@@ -1,0 +1,39 @@
+@import bourbon
+@import _vars.sass
+
+// ---------------------------------- ЛЕВЫЙ БАР ----------------------------------
+.left-bar
+	.left-bar-item
+		.item-row
+			&:hover
+				span
+					color: $accent2
+			.img
+				width: 30%
+				background-position: center top
+				background-size: cover
+				&:before
+					content: ''
+					padding-top: 100%
+					display: block
+			span
+				font-size: em(14px)
+			p
+				font-size: em(14px)
+				max-height: 45px
+				overflow: hidden
+// ---------------------------------- ЛЕВЫЙ БАР ----------------------------------
+
+
+
+// ---------------------------------- ТЕКСТ НОВОСТИ ----------------------------------
+#info-body
+	font-size: em(14px)
+	ul
+		li
+			position: relative
+			svg
+				position: absolute
+				left: 0
+				top: 5px
+// ---------------------------------- ТЕКСТ НОВОСТИ ----------------------------------
