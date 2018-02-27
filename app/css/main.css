@@ -553,7 +553,7 @@ header .menu-container {
   margin: 0; }
   .flexslider .custom-navigation a {
     color: #34a722 !important;
-    background-color: rgba(0, 0, 0, 0.55); }
+    background-color: rgba(255, 255, 255, 0.55); }
   .flexslider .flex-viewport {
     height: 100%; }
     .flexslider .flex-viewport ul {
@@ -568,16 +568,18 @@ header .menu-container {
           position: absolute;
           top: 50px;
           bottom: 50px;
-          left: 5%;
-          width: 90%;
+          left: 10%;
+          width: 65%;
           padding: 32px;
-          background-color: rgba(0, 0, 0, 0.55); }
+          background-color: rgba(255, 255, 255, 0.55); }
           .flexslider .flex-viewport ul li .slide-content h1 {
             color: #ff9c00;
             line-height: 1.5 !important;
-            font-size: 2.75rem; }
+            font-size: 2.75rem;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5); }
           .flexslider .flex-viewport ul li .slide-content h3 {
-            color: #fff; }
+            color: #000;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5); }
             .flexslider .flex-viewport ul li .slide-content h3 span:first-child {
               line-height: 1.25 !important;
               font-size: 2.25rem; }
@@ -651,7 +653,10 @@ header .menu-container {
       #edge .edge .elem:hover {
         -webkit-flex-basis: 100%;
             -ms-flex-preferred-size: 100%;
-                flex-basis: 100%; }
+                flex-basis: 100%;
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1); }
         #edge .edge .elem:hover p {
           display: block; }
       #edge .edge .elem .content {
