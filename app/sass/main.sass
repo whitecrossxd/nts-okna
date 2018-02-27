@@ -210,6 +210,11 @@ header
 	max-height: 500px
 	overflow: hidden
 	margin: 0
+	.custom-navigation
+		a
+			color: $main!important
+			// border: 1px solid black
+			background-color: rgba(0, 0, 0, 0.55)
 	.flex-viewport
 		height: 100%
 		ul
@@ -219,23 +224,30 @@ header
 				height: 100%
 				img
 					position: absolute
-					bottom: -15%
+					min-width: 100%!important
 				.slide-content
 					position: absolute
 					top: 50px
 					bottom: 50px
-					left: 10%
-					width: 80%
-					padding: 50px
-					background-color: rgba(255, 255, 255, 0.8)
+					left: 5%
+					width: 90%
+					padding: 32px
+					background-color: rgba(0, 0, 0, 0.55)
 					h1
-						color: $accent
-						line-height: 2!important
+						color: $accent2
+						line-height: 1.5!important
+						font-size: 2.75rem
 					h3
-						line-height: 2!important
+						color: #fff
+						span
+							&:first-child
+								line-height: 1.25!important
+								font-size: 2.25rem
+							&:last-child
+								font-size: 1.75rem
 					a
 						position: absolute
-						bottom: 15%
+						bottom: 32px
 	.custom-navigation
 		position: absolute
 		z-index: 1
@@ -261,7 +273,7 @@ header
 			display: flex
 			align-items: center
 			flex: 1 1 33%
-			height: 350px
+			height: 400px
 			margin: 1rem
 			border: 2px solid $grey
 			box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75)
@@ -272,14 +284,17 @@ header
 				background-image: url(../img/money.jpeg)
 				background-repeat: no-repeat
 				background-size: cover
+				background-position: center
 			&:nth-child(2)
 				background-image: url(../img/zamer.jpg)
 				background-repeat: no-repeat
 				background-size: cover
+				background-position: center
 			&:last-child
 				background-image: url(../img/postpay.jpg)
 				background-repeat: no-repeat
 				background-size: cover
+				background-position: center
 			&:hover
 				flex-basis: 100%
 				p
@@ -314,35 +329,46 @@ main
 			flex-wrap: wrap
 			justify-content: center
 		.card-item
+			display: flex
+			flex-wrap: nowrap
+			flex-direction: column
+			justify-content: center
+			flex: 1 1 19%
 			margin: 0.5%
-			min-width: 200px
-			flex: 0
-			.custom-card
-				cursor: pointer
-				outline: 2px solid #fff
-				outline-offset: -10px
-				transition: all 0.3s ease 0s
-				padding: 20px 20px 40px
-				background-color: $main
-				color: $white
-				.custom-card-body
-					padding-top: 20px
-					font-size: rem(20px)
-					font-weight: 400
-					line-height: 1.3
-					font-style: italic
+			cursor: pointer
+			outline: 2px solid #fff
+			outline-offset: -10px
+			transition: all 0.3s ease 0s
+			padding: 20px 20px 40px
+			background-color: $main
+			color: $white
+			&:first-child
 				.num
-					text-align: center
-					font-size: 100px
-					font-weight: 900
-					line-height: 1
-					transition: all 0.75s ease 0s
-				&:hover
-					color: $accent2
-					outline: 2px solid $accent
-					background-color: $grey
-					.num
-						transform: rotateY(2turn)
+					font-size: 5rem
+			&:nth-child(3)
+				.num
+					font-size: 4rem
+			&:nth-child(4)
+				.num
+					font-size: 4rem
+			.custom-card-body
+				padding-top: 20px
+				font-size: rem(20px)
+				font-weight: 400
+				line-height: 1.3
+				font-style: italic
+			.num
+				text-align: center
+				font-size: 6rem
+				font-weight: 900
+				line-height: 1
+				transition: all 0.4s ease 0s
+			&:hover
+				color: $accent2
+				outline: 2px solid $accent
+				background-color: $grey
+				.num
+					transform: rotateY(1turn)
 // ---------------------------------- ЦИФРЫ ----------------------------------
 
 
