@@ -4,23 +4,29 @@
 // ---------------------------------- ЛЕВЫЙ БАР ----------------------------------
 .left-bar
 	.left-bar-item
+		position: relative
+		&:first-child
+			margin-bottom: 4.5rem
+		a
+			position: relative
+		.more-info
+			position: absolute
+			bottom: -41px
 		.item-row
 			&:hover
-				span
-					color: $accent2
+				color: $accent2!important
 			.img
 				width: 30%
 				background-position: center top
 				background-size: cover
 				&:before
 					content: ''
-					padding-top: 100%
+					padding-top: 120%
 					display: block
 			span
-				font-size: em(14px)
+				font-size: em(12px)
 			p
 				font-size: em(14px)
-				max-height: 45px
 				overflow: hidden
 // ---------------------------------- ЛЕВЫЙ БАР ----------------------------------
 

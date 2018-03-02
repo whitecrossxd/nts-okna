@@ -722,10 +722,10 @@ main .about-nts {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 19%;
-        -ms-flex: 1 1 19%;
-            flex: 1 1 19%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 25%;
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%;
     margin: 0.5%;
     cursor: pointer;
     outline: 2px solid #fff;

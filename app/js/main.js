@@ -7,6 +7,8 @@ $(document).ready(function(){
 				this.initPlagins();
 			},
 			setUpListeners: function() {
+				$(".img-gallery a").on('click', app.activeImage);
+
 				$('.calc-step1 .trig1').on('click', app.step1);
 				$('.calc-step2 .trig2').on('click', app.step2);
 				$('.calc-step3 .trig3').on('click', app.step3);
@@ -15,26 +17,26 @@ $(document).ready(function(){
 
 
 				$('.calc-step6 input[name=option1]').click(function() {
-	        if ($(this).is(':checked'))
-	        	$('.calc-step6 .price').html(Number($('.calc-step6 .price').attr('data-value')) + 100).attr('data-value', Number($('.calc-step6 .price').attr('data-value')) + 100).parent().addClass('shake');
-	        else
-	        	$('.calc-step6 .price').html(Number($('.calc-step6 .price').attr('data-value')) - 100).attr('data-value', Number($('.calc-step6 .price').attr('data-value')) - 100).parent().addClass('shake');
-					setTimeout(function() { $('.calc-step6 .price').parent().removeClass('shake') }, 500);
-    		});
-    		$('.calc-step6 input[name=option2]').click(function() {
-	        if ($(this).is(':checked'))
-	        	$('.calc-step6 .price').html(Number($('.calc-step6 .price').attr('data-value')) + 200).attr('data-value', Number($('.calc-step6 .price').attr('data-value')) + 200).parent().addClass('shake');
-	        else
-	        	$('.calc-step6 .price').html(Number($('.calc-step6 .price').attr('data-value')) - 200).attr('data-value', Number($('.calc-step6 .price').attr('data-value')) - 200).parent().addClass('shake');
-					setTimeout(function() { $('.calc-step6 .price').parent().removeClass('shake') }, 500);
-    		});
-    		$('.calc-step6 input[name=option3]').click(function() {
-	        if ($(this).is(':checked'))
-	        	$('.calc-step6 .price').html(Number($('.calc-step6 .price').attr('data-value')) + 300).attr('data-value', Number($('.calc-step6 .price').attr('data-value')) + 300).parent().addClass('shake');
-	        else
-	        	$('.calc-step6 .price').html(Number($('.calc-step6 .price').attr('data-value')) - 300).attr('data-value', Number($('.calc-step6 .price').attr('data-value')) - 300).parent().addClass('shake');
-					setTimeout(function() { $('.calc-step6 .price').parent().removeClass('shake') }, 500);
-    		});
+		        if ($(this).is(':checked'))
+		        	$('.calc-step6 .price').html(Number($('.calc-step6 .price').attr('data-value')) + 100).attr('data-value', Number($('.calc-step6 .price').attr('data-value')) + 100).parent().addClass('shake');
+		        else
+		        	$('.calc-step6 .price').html(Number($('.calc-step6 .price').attr('data-value')) - 100).attr('data-value', Number($('.calc-step6 .price').attr('data-value')) - 100).parent().addClass('shake');
+						setTimeout(function() { $('.calc-step6 .price').parent().removeClass('shake') }, 500);
+	    		});
+	    		$('.calc-step6 input[name=option2]').click(function() {
+		        if ($(this).is(':checked'))
+		        	$('.calc-step6 .price').html(Number($('.calc-step6 .price').attr('data-value')) + 200).attr('data-value', Number($('.calc-step6 .price').attr('data-value')) + 200).parent().addClass('shake');
+		        else
+		        	$('.calc-step6 .price').html(Number($('.calc-step6 .price').attr('data-value')) - 200).attr('data-value', Number($('.calc-step6 .price').attr('data-value')) - 200).parent().addClass('shake');
+						setTimeout(function() { $('.calc-step6 .price').parent().removeClass('shake') }, 500);
+	    		});
+	    		$('.calc-step6 input[name=option3]').click(function() {
+		        if ($(this).is(':checked'))
+		        	$('.calc-step6 .price').html(Number($('.calc-step6 .price').attr('data-value')) + 300).attr('data-value', Number($('.calc-step6 .price').attr('data-value')) + 300).parent().addClass('shake');
+		        else
+		        	$('.calc-step6 .price').html(Number($('.calc-step6 .price').attr('data-value')) - 300).attr('data-value', Number($('.calc-step6 .price').attr('data-value')) - 300).parent().addClass('shake');
+						setTimeout(function() { $('.calc-step6 .price').parent().removeClass('shake') }, 500);
+	    		});
 			},
 			initPlaginsOnes: function(){
 				$('.flexslider').flexslider({
@@ -44,6 +46,14 @@ $(document).ready(function(){
 				});
 			},
 			initPlagins: function(){},
+
+			activeImage: function(){
+				event.preventDefault();
+				$(this).parent().find(".active").removeClass("active");
+				$(this).addClass("active");
+			},
+
+
 
 			typeHome: !1,
 			size: [0, 0],
