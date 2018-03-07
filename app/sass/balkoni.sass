@@ -2,9 +2,56 @@
 @import _vars.sass
 
 #balkon
-	.container
+	.name
+		position: absolute
+		bottom: 25%
+		left: -25px
+		background-color: $accent2
+		padding: 4px 12px
+		transform: skewX(-15deg)
+		box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.9)
 		p
-			font-size: 1.2rem
+			transform: unset
+			font-size: 2rem
+			margin: 0
+			transform: skewX(15deg)
+	.more-info
+		text-transform: uppercase
+		float: right
+		margin-top: 16px
+#service
+	.bordered
+		border: 1px solid transparent
+		transition: all 0.2s ease-in-out
+		&:hover
+			border: 1px solid $accent2
+			transform: scale(1.05)
+	.service-item
+		position: absolute
+		left: 15px
+		right: 15%
+		bottom: 66px
+		padding: 12px 4px
+		background-color: $main
+		color: white
+		font-size: 1.05rem
+		font-weight: 300
+		line-height: 1.2
+		p
+			text-transform: uppercase
+	.price
+		font-size: 1.5rem
+		margin-top: 12px
+#advantages
+	background-image: url(../img/baner.jpg)
+	background-position: cover
+	background-repeat: no-repeat
+	background-attachment: fixed
+#work_with_us
+	img
+		border-radius: 50%
+		height: 150px
+		width: 150px
 #otdelka
 	.d-block
 		margin: 0 auto
