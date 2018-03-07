@@ -618,10 +618,10 @@ header .menu-container {
             color: #000;
             text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5); }
             .flexslider .flex-viewport ul li .slide-content h3 span:first-child {
-              line-height: 1.25 !important;
+              line-height: 1.5 !important;
               font-size: 2.25rem; }
             .flexslider .flex-viewport ul li .slide-content h3 span:last-child {
-              font-size: 1.75rem; }
+              font-size: 1.5rem; }
           .flexslider .flex-viewport ul li .slide-content a {
             position: absolute;
             bottom: 32px; }
