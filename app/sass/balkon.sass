@@ -1,0 +1,97 @@
+@import bourbon
+@import _vars.sass
+
+#variants
+	.variants
+		border: 1px solid black
+		border-radius: 3px
+		text-align: center
+		line-height: 2
+		text-transform: uppercase
+		margin: 12px 0
+		cursor: pointer
+		transition: 0.2s ease-in-out
+		&:hover
+			color: white
+			background-color: $accent2
+	.choosen
+		color: white
+		background-color: $accent2
+		box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.75)
+	.choosen-variant
+		background-color: $main
+		text-align: center
+		line-height: 2
+		margin-bottom: 12px
+	.form
+		background-color: $main
+		margin: 12px 0
+		padding: 8px
+		border-radius: 3px
+		input
+			display: block
+			width: 100%
+			color: gray!important
+			margin: 8px 0
+			border: none!important
+			background-color: white
+			padding: 12px
+			&:focus, &:hover, &:active
+			border: 1px solid white
+			&::placeholder
+				color: gray
+		.more-info
+			min-width: 200px
+			border: none
+			margin: 4px 0
+	.min-price
+		background-color: white
+		border: 1px solid $accent
+		border-radius: 3px
+		font-size: 1.75rem
+		margin: 0 auto
+		text-align: center
+		width: 50%
+		color: $accent
+		line-height: 2
+		padding: 0 12px
+	.mini-text
+		font-size: 14px
+		line-height: 1.15
+	.icons-block-1
+		padding-left: 25px 0
+		line-height: 2.5
+		p	
+			position: relative
+			padding-left: 50px
+			svg
+				position: absolute
+				left: 0px
+				top: 5px
+				color: blue
+			&:first-child
+				svg
+					left: 10px
+			&:nth-child(2)
+				svg
+					left: 5px
+
+	.icons-block-2
+		padding-left: 25px 0
+		line-height: 2.5
+		p	
+			position: relative
+			padding-left: 50px
+			svg
+				position: absolute
+				left: 0px
+				top: 5px
+				color: red
+			&:first-child
+				svg
+					left: 10px
+			&:nth-child(2)
+				svg
+					left: 0px
+
+

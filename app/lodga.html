@@ -9,8 +9,9 @@
 	<link rel="stylesheet" href="css/pvh.css">
 	<link rel="stylesheet" href="css/balkoni.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/balkon.css">
 
-	<title>НТС - СК</title>
+	<title>Лоджии</title>
 </head>
 <body>
 	<header>
@@ -41,12 +42,12 @@
 	</header>
 
 	<main>
-		<section class="flexslider">
+		<!-- <section class="flexslider">
 			<ul class="slides">
 				<li>
 					<img src="/img/flexslider/balkoni1.png" />
 					<div class="slide-content">
-						<h1 class="text-uppercase bold-700">Балконы и лоджии с честной ценой!</h1>
+						<h1 class="text-uppercase bold-700">Лоджии с честной ценой!</h1>
 						<h3><span class="bold-300 main">Никаких скрытых наценок</span><br> <span class="bold-300">мы сразу озвучиваем стоимость окон и не меняем её при замере и в ходе работ по производству или в процессе установки!</span></h3>
 					</div>
 				</li>
@@ -64,7 +65,7 @@
 						<h3><span class="bold-300 main">Профессиональные замерщики и монтажники</span><br><span class="bold-300">измерят все линейные размеры, проконсультирует Вас по выбору профиля и фурнитуры, которые прослужат долгие годы</span></h3>
 					</div>
 				</li>
-			</ul><!--/slides -->
+			</ul>
 			<div class="custom-navigation row justify-content-between m-0 w-100">
 				<div class="col-1 text-left">
 					<a href="#" class="flex-prev d-inline-block"><i class="fas fa-angle-left fa-5x"></i></a>
@@ -72,7 +73,7 @@
 				<div class="col-1 text-right">
 					<a href="#" class="flex-next d-inline-block"><i class="fas fa-angle-right fa-5x"></i></a>
 				</div>
-			</div><!--/custom-navigation -->
+			</div>
 		</section>
 
 		<section id="edge">
@@ -103,43 +104,94 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
-		<section id="balkon" class="bgc-grey py-5">
+		<section id="variants" class="bgc-grey py-5">
 			<div class="container">
-				<h1 class="title text-uppercase mb-4"><span class="accent bold-700">остекление балконов и лоджий</span><br><span class="bold-100">в нижнем новгороде</span></h1>
+				<h1 class="title text-uppercase mb-4"><span class="accent bold-700">остекление лоджий</span><br><span class="bold-100">в нижнем новгороде</span></h1>
 				<div class="row">
-					<div class="col-6 mb-3 invisible animated move1">
-						<a href="lodga.html">
-							<img src="img/lodga.png" width="100%" height="400px" alt="">
-							<div class="name">
-								<p class="bold-700 text-white text-uppercase">лоджии</p>
-							</div>
-							<a href="lodga.html" class="more-info">подробнее</a>
-						</a>
+					<div class="col-6">
+						<div id="var1" class="variants choosen">
+							<p class="notice">Лоджия без утепления</p>
+						</div>
 					</div>
-					<div class="col-6 mb-3 invisible animated move2">
-						<a href="balkon.html">
-							<img src="img/balkon.png" width="100%" height="400px" alt="">
-							<div class="name">
-								<p class="bold-700 text-white text-uppercase">балконы</p>
-							</div>
-							<a href="balkon.html" class="more-info">подробнее</a>
-						</a>
+					<div class="col-6">
+						<div id="var2" class="variants">
+							<p class="notice">Утеплённый лоджия</p>
+						</div>
 					</div>
 				</div>
+				<div class="row mt-4 align-items-center var1">
+					<div class="col-12 mb-3 invisible animated move3">
+						<h3 class="choosen-variant text-uppercase bold-100 text-white">стандартное остекление</h3>
+					</div>
+					<div class="col-6 mb-3 invisible animated move1">
+						<img src="img/bez-uteplenia.png" width="100%" alt="">
+					</div>
+					<div class="col-6 mb-3 invisible animated move2">
+						<p class="bold-300">Если Ваша цель остеклить лоджию для защиты от ветра, дождя и возможности хранения зимних заготовок, посоветуем раму с однокамерным стеклопакетом (это 2 стекла). Вы получаете: герметичное пластиковое остекление лоджии (не продувается), хорошую тепло- и шумоизоляцию, жесткую конструкцию за счет армирования внутри профиля, надежное долговечную конструкцию (срок службы профиля 50 лет). На такой лоджии уже ранней весной можно высадить рассаду, выставить цветочки, они будут под надежной охраной.</p>
+						<div class="divider"></div>
+						<div class="icons-block-1">
+							<p class="text-nowrap bold-300"><i class="fas fa-2x fa-thermometer-quarter"></i>защитит от дождя, снега, мусора</p>
+							<p class="text-nowrap bold-300"><i class="fas fa-2x fa-tint"></i>не боится влаги, солнца и перепадов температур</p>
+							<p class="text-nowrap bold-300"><i class="fas fa-2x fa-shield-alt"></i>срок службы несколько десятков лет</p>
+						</div>
+						<div class="divider"></div>
+						<div class="form bold">
+							<h3 class="text-uppercase text-white bold-300">вызвать замерщика <span class="accent2">бесплатно</span></h3>
+							<form action="">
+								<input id="input1" class="text-white" type="text" placeholder="Ваше имя">
+								<input id="input2" class="text-white" type="text" placeholder="Ваш телефон">
+								<button class="more-info">Отправить</button>
+							</form>
+						</div>
+						<div class="min-price">
+							<p class="bold-700 text-nowrap">от 5990руб.- м<sup>2</sup></p>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-4 align-items-center var2 hidden">
+					<div class="col-12 mb-3 invisible animated move3">
+						<h3 class="choosen-variant text-uppercase bold-100 text-white">тёплое остекление</h3>
+					</div>
+					<div class="col-6 mb-3 invisible animated move1">
+						<img src="img/tepliy-balkon.png" width="100%" alt="">
+					</div>
+					<div class="col-6 mb-3 invisible animated move2">
+						<p class="bold-300">Если есть желание превратить лоджию в часть жилой комнаты, сделать тёплый пол, отопление – необходимо остеклить её пластиковыми рамами с двухкамерным стеклопакетом (это три стекла). Для еще большего сохранения тепла – закажите энергосберегающее напыление на внутреннее стекло, такие стеклопакеты станут на 25 % теплее обычных трех стекол, а лоджия станет прекрасным продолжением Вашей комнаты.</p>
+						<div class="divider"></div>
+						<div class="icons-block-2">
+							<p class="text-nowrap bold-300"><i class="fas fa-2x fa-thermometer-full"></i>герметичные (не продуваются, не промерзают)</p>
+							<p class="text-nowrap bold-300"><i class="fas fa-2x fa-volume-up"></i>дают хорошую шумоизоляцию (благодаря стеклопакету)</p>
+							<p class="text-nowrap bold-300"><i class="fas fa-2x fa-shield-alt"></i>срок службы несколько десятков лет</p>
+						</div>
+						<div class="divider"></div>
+						<div class="form bold">
+							<h3 class="text-uppercase text-white bold-300">вызвать замерщика <span class="accent2">бесплатно</span></h3>
+							<form action="">
+								<input id="input1" class="text-white" type="text" placeholder="Ваше имя">
+								<input id="input2" class="text-white" type="text" placeholder="Ваш телефон">
+								<button class="more-info">Отправить</button>
+							</form>
+						</div>
+						<div class="min-price">
+							<p class="bold-700 text-nowrap">от 8990руб.- м<sup>2</sup></p>
+						</div>
+					</div>
+				</div>
+				<p class="bold-100 mini-text">Обычная деревянная рама для остекления лоджии при таких требованиях точно не подойдет – это устаревшая технология: продувается, очень-очень холодная, не долговечная. Остекление лоджии алюминиевым профилем с раздвижным механизмом открывания на первый взгляд удобный вариант за счет раздвигающихся створок, также как и деревянная рама, к сожалению, не защитит Вас от сквозняков: конструкция ее такова, что створки ставятся в полозья, а при закрывании сходятся как дверки шкафа-купе на фетровых уплотнителях, не обеспечивая герметичности. К тому же в полозьях скапливается пыль, в дождь все это разжижается, створки перестают плавно и бесшумно работать. При резком похолодании створки могут и примерзнуть! Деревянная рама и алюминиевая раздвижка устанавливаются только с одинарным стеклом 4 мм, как раньше, это еще одна причина, почему в условиях нашего климата они не могут обеспечить ни необходимой защиты от холода, ни защитить от уличного шума. <br><br>Если новая рама должна соответствовать высоким требованиям по тепло - и шумоизоляции, быть надежной и крепкой, требуется установка пластиковой лоджии. Остекление лоджии пластиковой рамой с распашными и поворотно-откидными створками позволяет защитить ее от холода, уличной пыли, осадков и ветра. Тем самым данная часть квартиры становится пригодна к полноценному использованию. </p>
 			</div>
 		</section>
 
 		<section id="otdelka_vnutri" class="py-5">
 			<div class="container">
-				<h1 class="text-uppercase mb-3"><span class="title main bold-700">варианты</span><br><span class="bold-100">внутренней отделки балкона или лоджии</span></h1>
+				<h1 class="text-uppercase mb-3"><span class="title main bold-700">варианты</span><br><span class="bold-100">внутренней отделки лоджии</span></h1>
 				<div class="row mb-3">
 					<div class="col-7 my-3 invisible animated move1">
 						<img src="img/decor.png" width="100%" alt="">
 					</div>
 					<div class="col-5 my-3 invisible animated move2">
-						<p class="notice bold-300">Доверяя нам отделку балкона под ключ, вы можете быть уверены в превосходном результате. В работе мы используем <span class="accent2">только лучшие материалы и комплектующие</span>, которые имеют длительный срок эксплуатации, не выгорают, не изменяются под воздействием солнца, влаги и низких температур. Эти качества и профессиональный монтаж делают возможным <span class="accent2">предоставление гарантии на 5 лет.</span></p>
+						<p class="notice bold-300">Доверяя нам отделку лоджии под ключ, вы можете быть уверены в превосходном результате. В работе мы используем <span class="accent2">только лучшие материалы и комплектующие</span>, которые имеют длительный срок эксплуатации, не выгорают, не изменяются под воздействием солнца, влаги и низких температур. Эти качества и профессиональный монтаж делают возможным <span class="accent2">предоставление гарантии на 5 лет.</span></p>
 						<h1 class="mt-5 bold-300 text-center main price">от 750руб.- кв/м<sup>2</sup></p>
 					</div>
 				</div>
@@ -199,6 +251,7 @@
 				</div>
 			</div>
 		</section>
+		
 		<section id="work_with_us" class="py-5">
 			<div class="container">
 				<h1 class="title text-uppercase mb-4"><span class="main bold-700">пять простых шагов</span><br><span class="bold-100">к комфорту</span></h1>
@@ -361,6 +414,20 @@
 			function(){ $(this).addClass('pulse'); },
 			function(){ $(this).removeClass('pulse'); }
 		);
+	</script>
+	<script type="text/javascript">
+		$('#var1').click(function() {
+			$(this).addClass('choosen');
+			$('#var2').removeClass("choosen");
+			$('.var1').removeClass("hidden");
+			$('.var2').addClass("hidden");
+		});
+		$('#var2').click(function() {
+			$(this).addClass('choosen');
+			$('#var1').removeClass("choosen");
+			$('.var2').removeClass("hidden");
+			$('.var1').addClass("hidden");
+		});
 	</script>
 </body>
 </html>

@@ -349,6 +349,9 @@ body {
   background-color: rgba(255, 156, 0, 0.8) !important;
   color: #731982 !important; }
 
+.hidden {
+  display: none; }
+
 .title {
   font-size: 3rem !important; }
 
@@ -362,6 +365,7 @@ body {
   padding: 8px calc(16px + 42px) 8px 16px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }

@@ -72,9 +72,22 @@
 		height: 300px
 		.form-size
 			display: flex
+			flex-direction: column
 			width: 70%
 			height: 100%
-			align-items: center
+			justify-content: center
+			input
+				border: 1px solid white
+				background-color: $main
+				padding: 12px
+				&:focus, &:hover, &:active
+					border: 1px solid white
+				&::placeholder
+					color: #fff
+			.more-info
+				min-width: 200px
+				border: none
+				margin: 4px 0
 	.form-triangle
 			float: right
 			width: 0
