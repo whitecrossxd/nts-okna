@@ -9,6 +9,16 @@
 	<title>НТС - СК</title>
 </head>
 <body>
+	<div class="slide-form">
+		<h3 class="title text-uppercase"><span class="text-white bold-700">оставить</span><br><span class="accent2 bold-300">заявку</span></h3>
+		<p class="text-white">Мы свяжемся с Вами в ближайшее время</p>
+		<form action="">
+			<input type="text" placeholder="Ваше имя">
+			<input type="text" placeholder="+7 (___) __-__-__">
+			<button class="more-info text-uppercase">отправить</button>
+		</form>
+		<div class="trigger">Перезвонить?</div>
+	</div>
 	<header>
 		<div class="container">
 			<div class="nav-bar">
@@ -19,9 +29,9 @@
 				<div class="contacts">
 					<div class="number text-nowrap"><i class="fas fa-phone"></i></i>+7 (831) 422-24-30</div>
 					<p class="text-nowrap"><i class="fas fa-map-marker"></i>г. Н. Новгород, ул. Белозёрская, д.1</p>
-					<a href="#" class="more-info">консультация менеджера</a>
-					<!-- <p class="text-nowrap"><i class="far fa-envelope"></i>ntssk@mail.ru</p>
- -->				</div>
+					<a href="#" id="trigger" class="more-info">консультация менеджера</a>
+					<!-- <p class="text-nowrap"><i class="far fa-envelope"></i>ntssk@mail.ru</p>-->
+				</div>
 			</div>
 		</div>
 		<div class="menu-container">
@@ -364,6 +374,25 @@
 			function(){ $(this).addClass('pulse'); },
 			function(){ $(this).removeClass('pulse'); }
 		);
+	</script>
+	<script type="text/javascript">
+		let trig = $('.trigger, #trigger');
+		$('.trigger, #trigger').click(function(){
+			if (trig.hasClass("visible")) {
+				trig.removeClass("visible");
+				$(".slide-form").animate({right: -350}, 200);
+			}else{
+				trig.addClass("visible");
+				$(".slide-form").animate({right: 0}, 200);
+			}
+		});
+		$(document).on('click', function(){
+			if ($(event.target).closest(".slide-form, #trigger").length) return;
+			else{
+				trig.removeClass("visible");
+				$(".slide-form").animate({right: -350}, 200);
+			}
+        });
 	</script>
 </body>
 </html>

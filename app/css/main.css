@@ -389,6 +389,74 @@ body {
     -webkit-background-size: 35% 35%;
             background-size: 35%; }
 
+.slide-form {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  right: -350px;
+  height: 100%;
+  width: 350px;
+  padding: 0 12px;
+  background-color: #34a722;
+  z-index: 9999;
+  -webkit-transition: all 0.2sec ease-in-out;
+  -o-transition: all 0.2sec ease-in-out;
+  transition: all 0.2sec ease-in-out; }
+  .slide-form .trigger {
+    display: block;
+    position: absolute;
+    top: -webkit-calc(50% - 25px);
+    top: calc(50% - 25px);
+    left: -125px;
+    width: 200px;
+    height: 50px;
+    padding-top: 5px;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    background-color: #ff9c00;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    cursor: pointer; }
+  .slide-form form {
+    width: 100%; }
+    .slide-form form input {
+      display: block;
+      width: 100%;
+      color: gray !important;
+      margin: 8px 0;
+      border: none !important;
+      background-color: white;
+      padding: 12px;
+      border: 1px solid white; }
+      .slide-form form input::-webkit-input-placeholder {
+        color: gray; }
+      .slide-form form input::-moz-placeholder {
+        color: gray; }
+      .slide-form form input:-ms-input-placeholder {
+        color: gray; }
+      .slide-form form input::-ms-input-placeholder {
+        color: gray; }
+      .slide-form form input::placeholder {
+        color: gray; }
+    .slide-form form .more-info {
+      min-width: 200px;
+      border: none;
+      margin: 4px 0; }
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
