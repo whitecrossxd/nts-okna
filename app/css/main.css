@@ -534,6 +534,9 @@ a {
 .bold-900 {
   font-weight: 900; }
 
+.text-shadow {
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5); }
+
 .more-info {
   color: #fff;
   background-color: #000; }
@@ -640,8 +643,7 @@ header .menu-container {
       display: block;
       position: relative;
       color: #fff;
-      font-size: 14px;
-      font-weight: 300;
+      font-size: 16px;
       line-height: 3;
       white-space: nowrap;
       text-transform: uppercase;
@@ -1089,7 +1091,7 @@ main .news {
 #callback {
   background-color: #fff; }
   #callback .container {
-    background-image: url(../img/callback1.png);
+    background-image: url(../img/man.png);
     -webkit-background-size: auto 80%;
             background-size: auto 80%;
     background-position: right center;
