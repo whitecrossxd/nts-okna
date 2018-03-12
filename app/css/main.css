@@ -554,6 +554,46 @@ a {
 .h7 {
   font-size: 0.875em; }
 
+#modal-1, #modal-2, #modal-3, #modal-4, #modal-5, #modal-6 {
+  display: none; }
+  #modal-1 .overlay, #modal-2 .overlay, #modal-3 .overlay, #modal-4 .overlay, #modal-5 .overlay, #modal-6 .overlay {
+    cursor: pointer; }
+
+#close {
+  position: fixed;
+  right: 25px;
+  top: 25px;
+  z-index: 999;
+  cursor: pointer; }
+
+.modal-1, .modal-2, .modal-3, .modal-4, .modal-5, .modal-6 {
+  position: fixed;
+  overflow-y: auto;
+  background-color: white;
+  left: 10%;
+  right: 10%;
+  top: 10%;
+  bottom: 10%;
+  z-index: 2; }
+  .modal-1 .bordered, .modal-2 .bordered, .modal-3 .bordered, .modal-4 .bordered, .modal-5 .bordered, .modal-6 .bordered {
+    border: 1px solid #ededed;
+    -webkit-border-radius: 3px;
+            border-radius: 3px; }
+  .modal-1 ul li, .modal-2 ul li, .modal-3 ul li, .modal-4 ul li, .modal-5 ul li, .modal-6 ul li {
+    position: relative;
+    padding-left: 16px; }
+    .modal-1 ul li:before, .modal-2 ul li:before, .modal-3 ul li:before, .modal-4 ul li:before, .modal-5 ul li:before, .modal-6 ul li:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 8px;
+      height: 8px;
+      background-color: transparent;
+      border: 1px solid #34a722;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+
 header .nav-bar {
   display: -webkit-box;
   display: -webkit-flex;

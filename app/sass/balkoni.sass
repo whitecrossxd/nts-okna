@@ -1,6 +1,32 @@
 @import bourbon
 @import _vars.sass
 
+
+#osteklenie
+	border-top: 1px solid $grey
+	.border-bottom
+		border-bottom: 3px solid $accent2!important
+	.active-tabs
+		text-align: center
+		border: 1px solid black
+		border-bottom: 3px solid transparent!important
+		cursor: pointer
+		transition: 0.35s
+		margin-bottom: -3px
+		&:hover
+			background-color: rgba(red($accent2), green($accent2), blue($accent2), 0.5)
+		h3
+			line-height: 2
+	.choosen-tab
+		border: 3px solid $accent2
+		color: white
+		background-color: $accent2!important
+	.var1, .var2
+		img
+			margin: 1.5rem 0
+			width: 100%
+		.more-info
+			float: right
 #balkon
 	.name
 		position: absolute

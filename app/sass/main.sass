@@ -124,8 +124,10 @@ body
 			min-width: 200px
 			border: none
 			margin: 4px 0
-			
+
 //-----------КЛАССЫ ПОМОщь-----------
+
+
 *
 	box-sizing: border-box
 p
@@ -199,6 +201,47 @@ a
 .h7
 	font-size: em(14px)
 //-----------КЛАССЫ ПОМОщь-----------
+
+
+//-----------Modal window-----------
+#modal-1, #modal-2, #modal-3, #modal-4, #modal-5, #modal-6
+	display: none
+	.overlay
+		cursor: pointer
+#close
+	position: fixed
+	right: 25px
+	top: 25px
+	z-index: 999
+	cursor: pointer
+.modal-1, .modal-2, .modal-3, .modal-4, .modal-5, .modal-6
+	position: fixed
+	overflow-y: auto
+	background-color: white
+	left: 10%
+	right: 10%
+	top: 10%
+	bottom: 10%
+	z-index: 2
+	.bordered
+		border: 1px solid $grey
+		border-radius: 3px
+	ul
+		li
+			position: relative
+			padding-left: 16px
+			&:before
+				content: ''
+				position: absolute
+				left: 0
+				top: 12px
+				width: 8px
+				height: 8px
+				background-color: transparent
+				border: 1px solid $main
+				border-radius: 50%
+//-----------Modal window-----------
+
 
 // ---------------------------------- Шапка ----------------------------------
 header
