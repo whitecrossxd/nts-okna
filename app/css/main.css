@@ -381,9 +381,9 @@ body {
     display: block;
     position: absolute;
     top: 0;
-    left: -webkit-calc(100% - 42px);
-    left: calc(100% - 42px);
-    width: 42px;
+    left: -webkit-calc(100% - 41px);
+    left: calc(100% - 41px);
+    width: 41px;
     height: 100%;
     background-color: #ff9c00;
     background-image: url(../img/arrow-right.png);
