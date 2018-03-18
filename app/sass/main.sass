@@ -1,3 +1,4 @@
+
 @import bourbon
 @import _fonts.sass
 @import _vars.sass
@@ -54,6 +55,8 @@ body
 	font-size: 3rem!important
 .notice
 	font-size: 1.2rem!important
+.pointer
+	cursor: pointer
 .more-info
 	display: inline-block
 	position: relative
@@ -79,6 +82,7 @@ body
 		background-repeat: no-repeat
 		background-position: center center
 		background-size: 35%
+		transition: all 0.3s
 .slide-form
 	position: fixed
 	display: flex
@@ -588,6 +592,10 @@ main
 						font-size: rem(26px)
 			.info
 				padding-left: 50px
+				.more-info
+					&:hover
+						&:after
+							transform: rotate(90deg)
 				h1
 					font-size: rem(54px)
 					line-height: 1

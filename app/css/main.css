@@ -358,6 +358,9 @@ body {
 .notice {
   font-size: 1.2rem !important; }
 
+.pointer {
+  cursor: pointer; }
+
 .more-info {
   display: inline-block;
   position: relative;
@@ -387,7 +390,10 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: 35% 35%;
-            background-size: 35%; }
+            background-size: 35%;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
 
 .slide-form {
   position: fixed;
@@ -1032,6 +1038,10 @@ main .about {
           font-size: 1.625rem; }
     main .about .content .info {
       padding-left: 50px; }
+      main .about .content .info .more-info:hover:after {
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg); }
       main .about .content .info h1 {
         font-size: 3.375rem;
         line-height: 1;

@@ -47,12 +47,12 @@
 				<h1 class="title text-uppercase mb-4"><span class="accent bold-700">внутреняя отделка лоджий</span><br><span class="bold-100">в нижнем новгороде</span></h1>
 				<div class="row">
 					<div class="col-6">
-						<div id="var1" class="variants choosen">
+						<div id="var1" class="variants">
 							<p class="notice">Лоджия без утепления</p>
 						</div>
 					</div>
 					<div class="col-6">
-						<div id="var2" class="variants">
+						<div id="var2" class="variants choosen">
 							<p class="notice">Утеплённый лоджия</p>
 						</div>
 					</div>
@@ -115,7 +115,7 @@
 
 		<section id="otdelka_vnutri" class="py-5">
 			<div class="container">
-				<h1 class="text-uppercase mb-3"><span class="title main bold-700">варианты</span><br><span class="bold-100">внутренней отделки лоджии</span></h1>
+				<h1 class="text-uppercase mb-3"><span class="title main bold-700">Внутренняя отделка</span><br><span class="bold-100">от компании НТС</span></h1>
 				<div class="row mb-3">
 					<div class="col-7 my-3 invisible animated move1">
 						<img src="img/decor.png" width="100%" alt="">
@@ -347,14 +347,14 @@
 	</script>
 	<script type="text/javascript">
 		$('#var1').click(function() {
-			$(this).addClass('choosen');
-			$('#var2').removeClass("choosen");
+			$(this).removeClass('choosen');
+			$('#var2').addClass("choosen");
 			$('.var1').removeClass("hidden");
 			$('.var2').addClass("hidden");
 		});
 		$('#var2').click(function() {
-			$(this).addClass('choosen');
-			$('#var1').removeClass("choosen");
+			$(this).removeClass('choosen');
+			$('#var1').addClass("choosen");
 			$('.var2').removeClass("hidden");
 			$('.var1').addClass("hidden");
 		});
