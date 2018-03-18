@@ -13,6 +13,16 @@
 
 </head>
 <body>
+	<div class="slide-form">
+		<h3 class="title text-uppercase"><span class="text-white bold-700">оставить</span><br><span class="accent2 bold-300">заявку</span></h3>
+		<p class="text-white">Мы свяжемся с Вами в ближайшее время</p>
+		<form action="">
+			<input type="text" placeholder="Ваше имя">
+			<input type="text" placeholder="+7 (___) __-__-__">
+			<button class="more-info text-uppercase">отправить</button>
+		</form>
+		<div class="trigger">Перезвонить?</div>
+	</div>
 	<header>
 		<div class="container">
 			<div class="nav-bar">
@@ -282,14 +292,29 @@
 				<div class="container">
 					<h1 class="text-uppercase">
 						<span class="main bold-900 title">Уникальное предложение</span><br>
-						<span class="bold-100">на рынке пластиковых окон Salamander sl</span>
+						<span class="bold-100">на рынке пластиковых окон в Нижнем Новгороде</span>
 					</h1>
 					<div class="row">
-						<div class="col-3">
-							<img src="img/salam.jpg" width="100%" alt="">
+						<div class="col-5">
+							<img src="img/salam1.png" width="100%" alt="">
 						</div>
-						<div class="col-9">
-							<p class="bold-300">Профильная система окон SALAMANDER STREAMLINE разработана с учетом строгого соблюдения требований ГОСТов и международных стандартов, учитывая климатические особенности России и соответствие с внутренними стандартами SALAMANDER. Данным образом, компания SALAMANDER делает беспрецедентное предложение для рынка стран СНГ, основываясь, как и прежде на безукоризненном немецком качестве. <br><br> Изготовленные из данной системы пластиковые окна имеют явные преимущества: повышенная тепло- и шумоизоляция, максимальная устойчивость и элегантный внешний вид.<br><br> Требования по тепло- и шумоизоляции постоянно растут, на которые спешит ответить профильная система STREAMLINE. Система SALAMANDER SL — 5-камерная оконная система, благодаря увеличенной монтажной ширине 76 мм продукция SALAMANDER SL демонстрирует своим покупателям улучшенные показатели по теплозащите и шумоизоляции.</p>
+						<div class="col-7">
+
+							<div class="row">
+								<div class="col-3 mb-4">
+									<img class="d-block mx-auto" src="img/german.png" alt="" height="75px" width="75px">
+								</div>
+								<div class="col-9 mb-4">
+									<p class="notice">Профиль Salamander SL производится в Германии</p>
+								</div>
+								<div class="col-3 mb-4">
+									<img class="d-block mx-auto" src="img/heat.png" alt="" height="75px" width="75px" style="border-radius: 50%">
+								</div>
+								<div class="col-9 mb-4">
+									<p class="notice" style="line-height: 75px">Самый тёплый профиль</p>
+								</div>
+							</div>
+							<div class="more-info text-uppercase notice trigger">всего за 9990руб.-</div>
 						</div>
 					</div>
 				</div>
@@ -630,6 +655,25 @@
 		$('.overlay, #close').click(function () {
 			$('#modal-1, #modal-2, #modal-3').hide();
 		});
+	</script>
+	<script type="text/javascript">
+		let trig = $('.trigger, #trigger');
+		$('.trigger, #trigger').click(function(){
+			if (trig.hasClass("visible")) {
+				trig.removeClass("visible");
+				$(".slide-form").animate({right: -350}, 200);
+			}else{
+				trig.addClass("visible");
+				$(".slide-form").animate({right: 0}, 200);
+			}
+		});
+		$(document).on('click', function(){
+			if ($(event.target).closest(".trigger, .slide-form, #trigger").length) return;
+			else{
+				trig.removeClass("visible");
+				$(".slide-form").animate({right: -350}, 200);
+			}
+        });
 	</script>
 </body>
 </html>
